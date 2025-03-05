@@ -1,0 +1,45 @@
+ChatGPT
+
+You said:
+Minutes of meeting means
+ChatGPT said:
+Minutes of Meeting (MoM) refers to a written summary of key discussions, decisions, and action points from a meeting. It serves as a record of what was discussed, who attended, and what follow-up actions are required.
+
+Typical Contents of MoM:
+Meeting Details – Date, time, location, and purpose of the meeting.
+Attendees – Names of participants and absentees.
+Agenda Items – Topics discussed during the meeting.
+Discussion Points – Key takeaways from each agenda item.
+Decisions Made – Any conclusions or resolutions agreed upon.
+Action Items – Tasks assigned, responsible persons, and deadlines.
+Next Meeting Details – Date and time of the next meeting (if applicable).
+MoMs help keep track of meeting outcomes, ensure accountability, and provide a reference for those who missed the discussion.
+
+You said:
+Today we have done code walkthrough, which we have to change :- redfine path of process pdf,config changes, at different levels, api changes in digitization 2 api's , for choosing embedding function add parameters of overlap and chunk size, for embedding write generic functions like db cab be changed from config, faiss and chormaDB 
+
+Front end:-ui go through, chat potions, supa base, and ayush sir suggested to create a class with different method for upload and download the files form azure blob storage using connection string 
+ChatGPT said:
+Here’s a Minutes of Meeting (MoM) for today's discussion:
+
+Minutes of Meeting (MoM)
+Date: March 5, 2025
+Attendees: Team members involved in the code walkthrough
+Meeting Type: Code Walkthrough
+Discussion Led By: Ayush Sir
+
+Key Discussion Points & Action Items
+1. Backend Changes:
+Redefine Path of Process PDF – Update the path handling for better file processing.
+Configuration Changes – Adjustments required at different levels.
+API Changes in Digitization – Modifications needed in two APIs related to digitization.
+Embedding Function Enhancements:
+Add parameters for overlap and chunk size for more flexible embedding.
+Write generic functions for embeddings so the database (Faiss, ChromaDB, etc.) can be configured dynamically.
+2. Frontend Changes:
+UI Review & Enhancements – Go through the UI for improvements.
+Chat Options – Ensure proper functionality.
+Supabase Integration – Validate and enhance where required.
+3. Azure Blob Storage Implementation:
+Ayush Sir suggested creating a class with different methods for uploading and downloading files from Azure Blob Storage.
+Use connection string for authentication and operations.
