@@ -1,7 +1,11 @@
-UI-010	Profile Management	Verify updating profile details (Icon, Name, Job Role)	1. Open Profile settings. 2. Click on ‘Edit Profile’. 3. Change name, job role, or profile icon. 4. Click ‘Save’ and verify the changes.	• The updated name, job role, and icon should reflect immediately. • Profile details should persist across sessions. • Only valid formats should be accepted for profile icons (JPEG, PNG).	Medium
-UI-011	Profile Management	Verify managing shared links	1. Open Profile settings. 2. Click on ‘Manage Shared Links’. 3. View the list of shared links. 4. Click on ‘Revoke’ for any link.	• The revoked link should no longer be accessible. • Users should see all their shared links with an option to revoke them.	High
-UI-012	Accessibility	Verify accessibility options (Font Size, Contrast)	1. Open Profile settings. 2. Adjust font size and contrast settings. 3. Observe UI updates.	• The font size and contrast should adjust immediately as per selection. • Changes should be saved and persist after logout.	Medium
-UI-013	Data Management	Verify deleting all chats	1. Open Profile settings. 2. Click ‘Delete All Chats’. 3. Confirm the deletion.	• A confirmation popup should appear before deletion. • Upon confirmation, all chat history should be permanently deleted. • This action should not be reversible.	High
-UI-014	UI Customization	Verify Dark and Light mode switching	1. Open Profile settings. 2. Toggle between Dark and Light mode. 3. Observe UI changes.	• The theme should change immediately upon selection. • Theme preference should persist after logout and login.	Low
-UI-015	Security & Sessions	Verify logout from all devices	1. Open Profile settings. 2. Click ‘Logout from all devices’. 3. Verify all active sessions are logged out.	• All active sessions should be terminated. • Users should be prompted to log in again on all devices.	High
-UI-016	Security & Sessions	Verify single device logout	1. Open Profile settings. 2. Click ‘Logout’.	• The user should be logged out from the current device only. • Users should be redirected to the login page.	Medium
+UI-018	Chat Sharing	Verify that users can generate and share chat links	1. Open the chat that needs to be shared.
+2. Click on the "Share" button.
+3. Generate a shareable link.
+4. Copy and paste the link into a browser or share it with another user in the organization.
+5. Verify that the recipient can access the chat via the shared link.
+6. Check if access permissions (view/edit) are applied correctly.
+7. Try disabling the shared link and verify that the recipient can no longer access the chat.	• User should be able to generate a shareable link for a specific chat.
+• Only authorized users within the organization should be able to access the shared chat via the link.
+• Permissions (view/edit) should be enforced correctly.
+• Once the link is disabled, users should no longer be able to access the chat through it.
+• The system should provide an option to manage shared links (e.g., setting an expiration date, restricting access).
