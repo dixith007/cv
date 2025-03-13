@@ -1,11 +1,4 @@
-UI-005	Project/Floder	Verify new folder/project creation	"1. Click 'New Project/Folder' 
-2. Enter a name and confirm"	"• A new folder should be created under the selected workspace. 
-• The folder should be visible in the left navigation."	Medium
-		Verify adding multiple chats under a project	"1. Open a project 
-2. Start a new chat inside it"	"• The chat should be grouped under the selected project. 
-• All project-related chats should be displayed inside the project folder."	Medium
-		Verify uploading files to a project	"1. Open a project 
-2. Upload a file 
-3. Verify file visibility"	"• The file should be uploaded successfully. 
-• It should be listed inside the project folder."	High
-![Uploading image.png…]()
+UI-005	Project/Folder	Verify new folder/project creation	1. Click 'New Project/Folder' 2. Enter a name and confirm	• A new folder should be created under the selected workspace. • The folder should be visible in the left navigation panel. • Users should be able to expand/collapse the folder for better visibility. • The folder should persist even after a page refresh or logout. • The project should have a unique identifier to avoid duplication.	Medium
+UI-006	Project/Folder	Verify ability to create multiple chats in a project	1. Open a project 2. Click 'New Chat' multiple times 3. Verify all created chats are listed under the project	• Users should be able to create multiple chats within the same project. • Chats should be organized and listed under the project hierarchy. • Each chat should have a timestamp of its creation. • Users should be able to rename, move, or delete chats within the project.	Medium
+UI-007	Project/Folder	Verify ability to chat with multiple file formats	1. Open a project 2. Upload files of different formats (PDF, DOCX, TXT, CSV, images, etc.) 3. Verify if files are accessible and interactable	• Users should be able to upload and preview different file formats. • Supported file formats should include documents, spreadsheets, images, and code files. • System should notify users of unsupported file formats. • Users should be able to open and chat using the uploaded files as context.	High
+UI-008	Project/Folder	Verify ability to add instructions while chatting with files	1. Upload a file inside a project 2. Click 'Add Instructions' 3. Enter instructions related to the file 4. Save and verify instructions appear when accessing the file	• Users should be able to attach instructions to files. • Instructions should persist and be visible when accessing the file. • Users should be able to edit or delete instructions. • Instruction visibility should be restricted to authorized users only.	Hig
