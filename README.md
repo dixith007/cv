@@ -1,43 +1,12 @@
-TC ID	Focus Area	Test Case Description	Test Steps	Expected Result	Priority
-UI-001	Chat History	Verify chat history displays recent chats	"1. Open the application
-2. Navigate to the chat history panel
-3. Click on any chat
-4. Verify chat opens in the middle panel"	"• User should be able to click on the chat history. 
-• Chat history should be categorized (Day, Week, Month, Year). 
-• Clicking on the chats in history should display all conversations in the middle section. 
-• Temporary chats should not be displayed in chat history. 
-• Chat should be displayed according to the selected date range. 
-• Chat history should display recent chats, ordered by last interaction time. 
-• Clicking a chat should load its conversation in the middle panel."	High
-UI-002	Chat Features	Check rename chat functionality	"1. Right-click on a chat
-2. Select 'Rename'
-3. Enter a new name and confirm
-4. Verify the name updates in the chat history"	"• 'New Chat' button should be displayed in the left column.
-• Clicking 'New Chat' should start a new conversation in the middle panel.
-• There should be an option in the left column to rename a chat.
-• Clicking 'Delete' should remove chat permanently.
-• Clicking 'Archive' should move chat to the archive section."	Medium
-UI-003	Chat Features	Verify delete chat option	"1. Select a chat
-2. Click the 'Delete' icon
-3. Confirm deletion in the pop-up
-4. Check that the chat is removed"	"• 'New Chat' button should be displayed in the left column.
-• Clicking 'New Chat' should start a new conversation in the middle panel.
-• There should be an option in the left column to rename a chat.
-• Clicking 'Delete' should remove chat permanently.
-• Clicking 'Archive' should move chat to the archive section."	High
-UI-004	Chat Features	Verify archive chat functionality	"1. Select a chat
-2. Click the 'Archive' button
-3. Navigate to 'Archived Chats' section
-4. Verify chat is listed there"	"• 'New Chat' button should be displayed in the left column.
-• Clicking 'New Chat' should start a new conversation in the middle panel.
-• There should be an option in the left column to rename a chat.
-• Clicking 'Delete' should remove chat permanently.
-• Clicking 'Archive' should move chat to the archive section."	Medium
-UI-005	Chat Search	Verify chat search functionality	"1. Enter a keyword in the 'Search Chats' bar
-2. Observe results update dynamically
-3. Click on a result to open the chat"	"• The search bar should be clearly visible in the left column. 
-• Entering a keyword should display relevant chats instantly. 
-• Search results should update dynamically as the user types. 
-• Filters should allow narrowing search results by date or workspace. 
-• Clicking a search result should open the respective chat in the middle panel."	High
-![Uploading image.png…]()
+UI-006	General UI	Verify chat history filters (Day, Week, Month, Year)	1. Apply different time filters to the chat history 2. Verify displayed results	• Chat history should update based on the selected time range (Day, Week, Month, Year). • Only chats within the selected time period should be visible. • The default filter should show the most recent chats first.	Medium
+UI-007	General UI	Verify workspace creation	1. Click 'New Workspace' 2. Enter a name, icon, and description 3. Click 'Create' 4. Verify workspace is added to the list	• A new workspace should be created and listed under "Workspaces". • The workspace should be accessible immediately after creation. • Workspace details (name, icon, and description) should be correctly displayed.	High
+UI-008	General UI	Verify workspace switching	1. Click on an existing workspace 2. Observe the chat session update 3. Confirm workspace-specific chat history loads	• Clicking on a workspace should load its associated chat history. • Other workspaces should remain unaffected. • The active workspace should be highlighted in the UI.	High
+UI-009	General UI	Verify workspace customization (Rename, Icon, Description)	1. Click 'Edit Workspace' 2. Modify name, icon, or description 3. Save changes 4. Verify updates are reflected	• Updates to the workspace should reflect immediately. • Workspace should retain all modified settings after a page refresh. • Changes should be visible to all users who have access to the workspace.	Medium
+UI-010	General UI	Verify new folder/project creation	1. Click 'New Project/Folder' 2. Enter a name and confirm 3. Verify folder appears in chat organization	• A new folder should appear under the correct workspace. • The folder name should be displayed correctly. • Users should be able to open the folder and add chats inside.	Medium
+UI-011	General UI	Verify adding multiple chats under a project	1. Open a project 2. Start a new chat inside it 3. Verify the chat is grouped under the project	• The newly created chat should appear inside the selected project. • All project-related chats should remain grouped together. • The chat should be accessible from the left column under the project name.	Medium
+UI-012	General UI	Verify uploading files to a project	1. Open a project 2. Upload a file 3. Verify file is visible inside the project	• The uploaded file should be listed inside the project. • Users should be able to open or download the file. • The file should remain in the project even after refreshing the page.	High
+UI-013	General UI	Verify sharing chat within the organization	1. Select a chat 2. Click 'Share' and generate a link 3. Access the link from another device	• A shareable link should be generated. • Authorized users should be able to access the chat from the shared link. • Unauthorized users should not be able to view the chat.	Medium
+UI-014	General UI	Verify theme switching (Dark/Light Mode)	1. Toggle between Dark and Light mode in profile settings 2. Observe immediate UI changes	• UI should switch between dark and light mode instantly. • The selected theme should be saved and persist after a page refresh.	Low
+UI-015	General UI	Verify logout from all devices	1. Open Profile settings 2. Click 'Logout from all devices' 3. Verify active sessions are logged out	• All active sessions should be logged out immediately. • Users should be redirected to the login page. • Logged-out sessions should not have access to any chat data.	High
+UI-016	General UI	Verify accessibility options (Font Size, Contrast)	1. Open Profile settings 2. Adjust font size and contrast settings 3. Observe UI updates	• The font size should increase or decrease based on selection. • Contrast settings should apply instantly and remain persistent after refresh.	Medium
+UI-017	General UI	Verify deleting all chats	1. Open Profile settings 2. Click 'Delete All Chats' 3. Confirm deletion	• A confirmation prompt should appear before deletion. • All chats should be permanently removed. • Deleted chats should not be recoverable.	High
