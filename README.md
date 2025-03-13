@@ -1,3 +1,4 @@
+Test Case: Sharing the Chat Within the Organization (via Link)
 TC ID	Focus Area	Test Case Description	Test Steps	Expected Result	Priority
 UI-018	Chat Sharing	Verify that users can generate and share chat links	1. Open the chat that needs to be shared.
 2. Click on the "Share" button.
