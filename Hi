@@ -1,55 +1,54 @@
-Middle Column - Test Cases (Enhanced Expected Results)
 TC ID	Focus Area	Test Case Description	Test Steps	Expected Result	Priority
-UI-010	Startup Page	Verify the startup page layout	1. Open the application
-2. Observe the middle column on launch	• The middle column should display a welcoming startup page, similar to ChatGPT.
+UI-010	Startup Page	Verify the startup page layout	"1. Open the application
+2. Observe the middle column on launch"	"• The middle column should display a welcoming startup page, similar to ChatGPT.
 • Users should see sample queries, example responses, and available features to help them get started.
 • The layout should be clean, well-organized, and not cluttered.
-• If the user has previous chats, they should see a message prompting them to continue where they left off.	Medium
-UI-011	File Upload	Verify file upload functionality	1. Click the "Upload" button
+• If the user has previous chats, they should see a message prompting them to continue where they left off."	Medium
+UI-011	File Upload	Verify file upload functionality	"1. Click the 'Upload' button
 2. Select a file (PDF, Doc, etc.)
-3. Verify file appears in the chat window	• Users should be able to upload files in supported formats like PDFs, DOCs, and TXTs.
+3. Verify file appears in the chat window"	"• Users should be able to upload files in supported formats like PDFs, DOCs, and TXTs.
 • The uploaded file should be clearly visible in the chat window, showing the filename and size.
 • The system should allow users to view or download the file after uploading.
 • If an unsupported file type is uploaded, a clear error message should be displayed, guiding users on supported formats.
-• Users should be able to delete an uploaded file if needed.	High
-UI-012	Web Search	Verify web search integration	1. Click the "Web Search" option
-2. Select "Intranet" or "Internet" search
-3. Enter a query and submit	• The system should fetch relevant results based on the user’s search.
+• Users should be able to delete an uploaded file if needed."	High
+UI-012	Web Search	Verify web search integration	"1. Click the 'Web Search' option
+2. Select 'Intranet' or 'Internet' search
+3. Enter a query and submit"	"• The system should fetch relevant results based on the user’s search.
 • Users should see an option to switch between Intranet (internal data) and Internet (external search).
 • Search results should be well-structured, with clickable links, short descriptions, and proper formatting.
-• Users should be able to copy, save, or use the search results in a chat conversation.	High
-UI-013	Speech-to-Text	Verify speech-to-text functionality	1. Click the "Microphone" icon
+• Users should be able to copy, save, or use the search results in a chat conversation."	High
+UI-013	Speech-to-Text	Verify speech-to-text functionality	"1. Click the 'Microphone' icon
 2. Speak a sentence
-3. Verify the text appears in the chat input box	• When users speak into the microphone, their words should accurately convert into text in real-time.
+3. Verify the text appears in the chat input box"	"• When users speak into the microphone, their words should accurately convert into text in real-time.
 • The transcribed text should be editable before sending, allowing corrections if needed.
-• If the system fails to recognize speech, it should show a clear message suggesting the user to try again.
-• The microphone button should provide visual feedback (e.g., blinking icon) to indicate it's recording.	Medium
-UI-014	Shortcuts	Verify AI Assistant shortcuts (@, /, #, !)	1. Type "@" in the chat input box
-2. Type "/" in the input box
-3. Type "#" to attach stored files
-4. Type "!" to call pre-built functions	• Typing "@" should display a list of available AI assistants users can mention.
-• Typing "/" should list suggested commands (e.g., /summarize, /translate, /explain).
-• Typing "#" should show a dropdown of previously uploaded files, allowing users to attach them easily.
-• Typing "!" should display available pre-built AI functions, making it easy for users to interact with them.
-• The system should auto-complete shortcut commands for ease of use.	High
-UI-015	Help Section	Verify the help button functionality	1. Click the "Help" button at the bottom right corner
-2. Check available options	• Clicking the Help button should open a menu with FAQs, keyboard shortcuts, admin contact, and announcements.
+• If the system fails to recognize speech, it should show a clear message suggesting the user try again.
+• The microphone button should provide visual feedback (e.g., blinking icon) to indicate it's recording."	Medium
+UI-014	Shortcuts	Verify AI Assistant shortcuts (@, /, #, !)	"1. Type '@' in the chat input box
+2. Type '/' in the input box
+3. Type '#' to attach stored files
+4. Type '!' to call pre-built functions"	"• Typing '@' should display a list of available AI assistants users can mention.
+• Typing '/' should list suggested commands (e.g., /summarize, /translate, /explain).
+• Typing '#' should show a dropdown of previously uploaded files, allowing users to attach them easily.
+• Typing '!' should display available pre-built AI functions, making it easy for users to interact with them.
+• The system should auto-complete shortcut commands for ease of use."	High
+UI-015	Help Section	Verify the help button functionality	"1. Click the 'Help' button at the bottom right corner
+2. Check available options"	"• Clicking the Help button should open a menu with FAQs, keyboard shortcuts, admin contact, and announcements.
 • The FAQ section should contain clear answers to common questions.
-• Clicking on "Contact Admin" should provide an email or chat option for support.
-• Announcements should be visible with a timestamp, ensuring users see important updates.	Medium
-UI-016	Model Selection	Verify LLM model selection	1. Click "Quick Settings"
-2. Select a different LLM model from the dropdown	• Users should be able to select different AI models for chat assistance.
+• Clicking on 'Contact Admin' should provide an email or chat option for support.
+• Announcements should be visible with a timestamp, ensuring users see important updates."	Medium
+UI-016	Model Selection	Verify LLM model selection	"1. Click 'Quick Settings'
+2. Select a different LLM model from the dropdown"	"• Users should be able to select different AI models for chat assistance.
 • The selected model should apply instantly without needing to refresh the page.
-• If the selected model fails to load, the system should fall back to the default model and notify the user.	High
-UI-017	Temperature & Context Settings	Verify temperature and context length adjustment	1. Open "Quick Settings"
+• If the selected model fails to load, the system should fall back to the default model and notify the user."	High
+UI-017	Temperature & Context Settings	Verify temperature and context length adjustment	"1. Open 'Quick Settings'
 2. Adjust the temperature and context length sliders
-3. Save changes	• The temperature setting should affect how creative or factual the AI responses are.
+3. Save changes"	"• The temperature setting should affect how creative or factual the AI responses are.
 • The context length setting should determine how much past conversation the AI remembers.
 • The system should visually update settings in real-time, so users understand the changes before saving.
-• Saved settings should persist across sessions, unless manually reset.	Medium
-UI-018	Temporary Chat	Verify temporary chat toggle	1. Click on "Toggle Temporary Chat"
+• Saved settings should persist across sessions, unless manually reset."	Medium
+UI-018	Temporary Chat	Verify temporary chat toggle	"1. Click on 'Toggle Temporary Chat'
 2. Start a new conversation
-3. Check if it appears in chat history	• Temporary chats should not be saved in chat history or stored for later access.
+3. Check if it appears in chat history"	"• Temporary chats should not be saved in chat history or stored for later access.
 • A visible indicator (like a warning icon or message) should notify users that the chat is temporary.
 • The system should not allow file uploads, saving, or sharing in temporary chats to prevent data retention.
-• If a user accidentally enables a temporary chat, they should get a clear warning before proceeding.	High
+• If a user accidentally enables a temporary chat, they should get a clear warning before proceeding."	High
