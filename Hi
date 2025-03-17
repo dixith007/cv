@@ -1,37 +1,116 @@
-Minutes of Meeting (MoM)
-Date: March 6, 2025
-Attendees: Team members involved in the discussion
-Meeting Type: Project Progress Review
-
-Key Discussion Points & Action Items
-1. Frontend Updates:
-Search Bar – Implemented.
-Chat Section Enhancements:
-Chat History – Developed.
-Chat Content – Implemented with search functionality.
-New Features to Implement:
-Support both Internet and Intranet for chat.
-Account Option – Needs to be added.
-Dark Mode Fixes – Ensure proper functionality.
-Logout from All Devices – Implement a global logout feature.
-2. Database Updates:
-Azure Blob Storage Integration:
-Implemented upload and download functionalities.
-Added support for multiple file uploads and downloads.
-Pending Task: Implement logger functionality and delete feature for managing stored files.
-3. Backend Updates:
-Configuration Management:
-Moved config files inside the backend folder.
-Need improvements in config.yaml.
-Support nested JSON structure in config.yaml.
-RAG Pipeline Enhancements:
-True/False conditions implemented in RAG APIs.
-RAG pipeline setup completed (PDF Load, Web Load).
-Chunking Service Updates:
-Config-Driven Parameters: Implement chunking service with configurable parameters such as chunk size, overlap, and embedding settings.
-Ensure dynamic control over chunking behavior via config.yaml.
-Main API File Updates:
-Ensure main.py calls only the endpoints that are set to true in the config.
-Implement YAML to Object conversion.
-Azure Integration:
-Implement Azure functionalities directly into the code.
+TC ID	Focus area	Test Case Description	Test Steps	Expected Result	Priority
+UI-001	Chat history	Verify chat history displays recent chats	"1. Open the application
+2. Navigate to the chat history panel
+3. Click on any chat
+4. Verify chat opens in the middle panel"	"•  There should be a separte section or chat history in the left column
+•  User should able to click on the chat history 
+•  Chat history should be categorized (Day , week , month and year).
+•  By clicking on the chats in the chat history user should able to see the all conversations corresponding to chat in middle section.
+•  The temporary chat should not display in chat history or the user.
+•  Chat should be displayed as per the selection of the date range
+•  The chat history should display a list of recent chats, ordered by last interaction timeline.
+•  Clicking a chat should load its conversation in the middle panel.
+"	High
+UI-002	Chat Features	Verify the ability to add a new chat	"1. Click 'New Chat' button 
+2. Verify chat starts in the middle panel"	"• A 'New Chat' button should be visible in the left column. 
+• Clicking 'New Chat' should create and display a new conversation in the middle panel.
+• There should be a button in the left corner where user user can rename the chat as per their requirements."	High
+		Verify rename chat functionality	"1. Right-click on chat name
+2. Select ""Rename"" 
+3. Enter new name
+ 4. Press Enter"	"• A rename  button should be visible near the chat. 
+• Clicking 'rename  Chat' , should open a dialog box and user should be able to rename a chat. 
+• The new name should be updated instantly in the chat history list."	Medium
+		Verify delete chat functionality	"1. Click 'Delete' icon 
+2. Confirm deletion in pop-up"	"• A Delete  button should be visible near the chat.
+• After clicking the delete button it should give confimation message for deletion of that. 
+• The selected chat should be permanently removed from history. 
+• A confirmation message should appear after deletion."	High
+		Verify archive chat functionality	"1. Click on a chat 
+2. Click ""Archive"""	"• The chat should be moved from Active Chats to Archived Chats. 
+• Archived chats should not appear in the active chat history."	Medium
+UI-003	Filters and search	Verify chat history filters (Day, Week, Month, Year)	"1. Apply different time filters to the chat history 
+2. Verify displayed results"	"• Chats should be filtered based on the selected time range.  (Day, Week, Month, Year)
+• Only chats within the selected timeframe should be displayed."	Medium
+		Verify chat search functionality	"1. Enter a keyword in the search bar
+2. Verify displayed results"	"•After searching the keyword it should match the chats with keywords  that had been searched. 
+•Only chats matching the search keyword should be shown.
+• The matching keyword should be highlighted in the search results."	High
+UI-004	"	Chat Sharing"	"Verify that users can generate and share chat links	"	"1. Open the chat that needs to be shared.
+2. Click on the ""Share"" button.
+3. Generate a shareable link.
+4. Check if access permissions (view/edit) are applied correctly.
+5. Try disabling the shared link and verify that the recipient can no longer access the chat."	"• Users should be able to generate  a shareable link for a chat.
+• The link should be copied successfully and remain accessible until disabled.
+• Only authorized users within the organization should be able to open the shared chat.
+• If the chat has restricted permissions, users should only be able to view/edit based on their access level.
+• After disabling the link, it should no longer be accessible.
+• The system should provide a confirmation message when the link is created or disabled."	High
+UI-005	Workspaces	Verify workspace creation	"1. Click 'New Workspace'
+2. Enter a name, icon, and description 
+3. Click 'Create'"	"• A new workspace should be added under ""Workspaces"" section. 
+• Workspace details (name, icon, and description) should be visible.
+• The created workspace should be their even after page refersh or logout"	High
+		Verify workspace switching	"1. Click on an existing workspace 
+2. Observe chat panel  update"	"• The chat area should load a different session independent of other workspaces.
+• Workspace switching should happen smoothly , witout page reload
+• Only chats and files related to workspaces should be displayed.
+"	High
+		Verify workspace customization (Rename, Icon, Description)	"1. Click 'Edit Workspace' 
+2. Modify name, icon, or description 
+3. Click Save"	"• Updated workspace details should be reflected immediately.
+• The modidfied name,icon, or description should be saved permanently"	Medium
+UI-006	Project/Folder	Verify new folder/project creation	"1. Click 'New Project/Folder' 
+2. Enter a name and confirm"	"• A new folder should be created under the selected workspace.
+• The folder should be visible in the left navigation panel.
+• Users should be able to expand/collapse the folder for better visibility.
+• The folder should remain even after a page refresh or logout. "	Medium
+		Verify ability to create multiple chats in a project	"1. Open a project 
+2. Click 'New Chat' multiple times 
+3. Verify all created chats are listed under the project"	"• Users should be able to create multiple chats within the same project. • Chats should be organized and listed under the project hierarchy. 
+• Each chat should have a timestamp of its creation. 
+• Users should be able to rename, move, or delete chats within the project."	Medium
+UI-007	File management and instructions	Verify ability to chat with multiple file formats	"1. Open a project 
+2. Upload files of different formats (PDF) 
+3. Verify if files are accessible and interactable"	"• Users should be able to upload and preview different file formats. 
+• Supported file formats should include PDF documents.
+• System should notify users of unsupported file formats.
+ • Users should be able to open and chat with uploaded files as context."	High
+		Verify ability to add instructions while chatting with files	"1. Upload a file inside a project 
+2. Click 'Add Instructions' 
+3. Enter instructions related to the file 
+"	"• Users should be able to attach instructions to files. 
+• Instructions should persist and be visible when accessing the file. 
+• Users should be able to edit or delete instructions. 
+• Instruction visibility should be restricted to authorized users only."	High
+UI-008	Profile Management	Verify updating profile details (Icon, Name, Job Role)	"1. Open Profile settings. 
+2. Click on ‘Edit Profile’.
+3. Change name, job role, or profile icon. 
+4. Click ‘Save’ and verify the changes."	"• A 'Profile' icon should be visible in the left column(Botton corner).
+• The updated name, job role, and icon should reflect immediately. 
+• Profile details should remain across sessions. 
+• Only valid formats should be accepted for profile icons (JPEG, PNG)."	Medium
+		Verify managing shared links	"1. Open Profile settings. 
+2. Click on ‘Manage Shared Links’. 
+3. View the list of shared links. "	"• Only authorized users should be able to access the shared chat. 
+• An unauthorized user should not be able to access the chat."	High
+		Verify accessibility options (Font Size, Contrast)	"1. Open Profile settings. 
+2. Toggle  on  Accessibility
+3. Observe UI updates."	"• The font size should increase immediately upon selection. 
+• Changes should be saved and remain after logout."	Medium
+		Verify deleting all chats	"1. Open Profile settings. 
+2. Click ‘Delete All Chats’. 
+3. Confirm the deletion."	"• A confirmation popup should appear before deletion. 
+• Upon confirmation, all chat history should be permanently deleted. 
+• This action should not be reversible."	High
+		Verify Dark and Light mode switching	"1. Open Profile settings. 
+2. Toggle between Dark and Light mode.
+ 3. Observe UI changes."	"• The theme should change immediately upon selection.
+• Theme preference should persist after logout and login."	Low
+UI-009	Securtiy and sessions	Verify logout from all devices	"1. Open Profile settings. 
+2. Click ‘Logout from all devices’.
+ 3. Verify all active sessions are logged out."	"• All active sessions should be terminated. 
+• Users should be prompted to log in again on all devices."	High
+		Verify single device logout	"1. Open Profile settings. 
+2. Click ‘Logout’."	"• The user should be logged out from the current device only. 
+• Users should be redirected to the login page."	0
