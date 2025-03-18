@@ -1,4 +1,8 @@
-• Users should be able to scroll through chat history smoothly
-• Older chats should load dynamically without lag
-• A "Load More" button should appear if applicable
-• No overlapping of text or broken UI should occur
+• A rename input box should appear when clicking the rename icon.
+• The new name should be saved instantly in the chat history list.
+• No special characters should be allowed except (_ - .).
+• If an empty name is entered, an error message should appear.
+• If the name exceeds the character limit, a validation message should be displayed.
+• If the user presses Esc, the chat name should remain unchanged.
+• The rename icon should be clearly visible and clickable.
+
