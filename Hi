@@ -1,8 +1,9 @@
-• A rename input box should appear when clicking the rename icon.
-• The new name should be saved instantly in the chat history list.
-• No special characters should be allowed except (_ - .).
-• If an empty name is entered, an error message should appear.
-• If the name exceeds the character limit, a validation message should be displayed.
-• If the user presses Esc, the chat name should remain unchanged.
-• The rename icon should be clearly visible and clickable.
-
+TS_ID-01	Chat History	Verify chat history categorization by Day, Week, Month, and Year	1. Open the application.
+2. Navigate to the chat history section on the left column.
+3. Observe how chats are grouped.	• The chat history should be categorized into sections: Today, This Week, This Month, and Older Chats (Yearly).
+• There should be clear headers like “Today”, “This Week”, “This Month”, and “Older Chats” to indicate the category.
+• If no chats exist for a category, it should not be shown.
+• Each chat should be listed under the correct category based on the last activity timestamp.
+• The categorization should automatically update as days/weeks/months pass.
+• Users cannot manually change the category of a chat.
+• The UI should remain clear, with no overlapping text or broken alignment.	High	Pass/Fail
