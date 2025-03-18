@@ -1,17 +1,41 @@
-C ID	Focus Area	Test Case Description	Test Steps	Expected Result	Priority	Actual Result
-TC-001	Chat Archive	Verify the ability to archive a chat	1. Open the chat history.
-2. Click on the Archive icon/button next to a chat.
-3. Confirm the archive action.	- The chat should be moved from Active Chats to Archived Chats.
-- A confirmation message should appear: "Chat archived successfully."
-- The chat should disappear from the active chat list.	High	Pass/Fail
-TC-002	Chat Archive	Verify that archived chats are stored properly	1. Open the Archived Chats section.
-2. Verify the previously archived chat is listed.	- The chat should be visible in the Archived Chats section.
-- Users should be able to search for archived chats.
-- Archived chats should maintain their original timestamps and content.	High	Pass/Fail
-TC-003	Chat Archive	Verify unarchiving a chat	1. Open the Archived Chats section.
-2. Click the Unarchive button next to a chat.
-3. Confirm the action.	- The chat should move back to Active Chats.
-- A confirmation message should appear: "Chat unarchived successfully."	Medium	Pass/Fail
-TC-004	Chat Archive	Verify that archived chats cannot be edited	1. Open the Archived Chats section.
-2. Try to edit or send a message in an archived chat.	- The system should prevent users from editing/sending messages in archived chats.
-- A message should appear: "Archived chats cannot be modified. Please unarchive to continue."
+TC ID	Focus Area	Test Case Description	Test Steps	Expected Result	Priority	Actual Result
+TC-001	Theme Switching	Verify switching from Light Mode to Dark Mode	1. Open Profile Settings.
+2. Locate the "Theme" or "Appearance" option.
+3. Select Dark Mode.
+4. Observe the UI changes.	- The UI should immediately switch to Dark Mode.
+- The background should turn dark, and text should become light-colored for readability.
+- Icons, buttons, and UI elements should be clearly visible.
+- A message should confirm: "Dark Mode enabled."	High	Pass/Fail
+TC-002	Theme Switching	Verify switching from Dark Mode to Light Mode	1. Open Profile Settings.
+2. Locate the "Theme" option.
+3. Select Light Mode.
+4. Observe the UI changes.	- The UI should immediately switch to Light Mode.
+- The background should turn light, and text should become dark-colored.
+- There should be no visibility issues with UI elements.
+- A message should confirm: "Light Mode enabled."	High	Pass/Fail
+TC-003	Theme Switching	Verify that theme settings persist after logout & login	1. Switch to Dark Mode.
+2. Logout of the platform.
+3. Login again.
+4. Observe if the selected theme persists.	- The selected theme (Light/Dark Mode) should persist after logging out and logging in.
+- Users should not have to manually switch the theme again.	Medium	Pass/Fail
+TC-004	Theme Switching	Verify system behavior when toggling the theme multiple times	1. Switch between Light and Dark Mode rapidly (5-6 times).
+2. Observe any performance issues or glitches.	- The system should smoothly transition between themes.
+- No UI flickering, lag, or crashes should occur.
+- The final selected theme should remain active.	Medium	Pass/Fail
+TC-005	Theme Switching	Verify theme visibility and readability in Dark Mode	1. Switch to Dark Mode.
+2. Check the visibility of text, buttons, icons, and chat messages.	- Text should be readable (light-colored on dark background).
+- Buttons, icons, and hover effects should be visible.
+- No overlapping text, missing elements, or broken UI should be present.	High	Pass/Fail
+TC-006	Theme Switching	Verify theme visibility and readability in Light Mode	1. Switch to Light Mode.
+2. Check the visibility of text, buttons, icons, and chat messages.	- Text should be readable (dark-colored on light background).
+- UI elements should be clearly distinguishable.
+- No white-on-white or unreadable elements should be present.	High	Pass/Fail
+TC-007	Theme Switching	Verify theme settings on different devices	1. Switch to Dark Mode on Device A (Laptop).
+2. Open the platform on Device B (Mobile or Tablet).
+3. Observe if the selected theme applies.	- The theme setting should be device-specific.
+- If a user logs into a different device, they may need to reselect the theme unless a sync feature is enabled.	Medium	Pass/Fail
+Negative & Edge Cases
+TC ID	Focus Area	Test Case Description	Test Steps	Expected Result	Priority	Actual Result
+TC-008	Theme Switching	Verify system behavior if theme toggle fails	1. Try switching between Light and Dark Mode.
+2. If the theme doesn't change, check for an error message.	- The system should display an error message if theme switching fails.
+- Example: "Unable to switch themes. Please try again."
