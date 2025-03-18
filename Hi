@@ -1,8 +1,9 @@
-Verify the ability to search for a chat	1. Open the application.
-2. Locate the Search Bar in the left panel.
-3. Enter a keyword matching an existing chat.
-4. Press Enter or click the search icon.	• The search should return all chats containing the exact keyword.
-• The matching word should be highlighted inside the chat history results.
-• The search should be case-insensitive (e.g., searching for "Meeting" or "meeting" should return the same results).
-• If multiple chats match, all should be displayed in descending order of relevance (latest chats first).
-• The UI should remain clear, and search results should be easy to scroll through.
+TC-002	Chat Sharing	Verify that only authorized users can access the shared link	1. Generate a chat link.
+2. Share it with an unauthorized user (someone without permission).
+3. Attempt to open the link.	• Unauthorized users should see a message: "You do not have access to this chat."
+• The system should prevent unauthorized viewing/editing.	High	Pass/Fail
+TC-003	Chat Sharing	Verify that the chat link is accessible within the organization	1. Generate a chat link.
+2. Share it with a colleague inside the organization.
+3. Open the link from their system.	• The shared chat should open successfully.
+• The recipient should be able to view the conversation.
+• If edit permissions were granted, they should be able to send messages.
