@@ -1,43 +1,139 @@
-TS_ID-24	Workspace Management	Verify the ability to create multiple workspaces	1. Click on "Create New Workspace" button.
-2. Enter a workspace name, icon, and description.
-3. Click Create and verify workspace creation.	• Users should be able to create multiple workspaces (e.g., Personal, Work, Clinical, Research).
-• Each workspace should be listed separately in the left panel.
-• The created workspace should persist after logout and refresh.
-• There should be no duplicate workspace names allowed.
-• If the user tries to create a workspace without a name, an error message should be shown: "Workspace name is required".	High	Pass/Fail
-TS_ID-25	Workspace Switching	Verify switching between different workspaces	1. Click on an existing workspace from the left panel.
-2. Observe the changes in the middle panel.	• Clicking on a workspace should load a new session of the platform.
-• Previous workspace chats and data should not overlap with the new workspace.
-• The switch should happen instantly and smoothly without page refresh.
-• Only chats, files, and configurations related to the selected workspace should be displayed.
-• If there is an issue with loading the workspace, an error message should appear: "Failed to load workspace. Try again later."	High	Pass/Fail
-TS_ID-26	Workspace Customization	Verify the ability to rename a workspace	1. Click on a workspace.
-2. Click on "Edit Workspace".
-3. Enter a new name and save.	• Users should be able to rename workspaces.
-• The new name should be updated instantly in the left panel.
-• No special characters should be allowed except (_ - .).
-• If the user tries to enter an empty name, an error should appear: "Workspace name cannot be blank."	Medium	Pass/Fail
-TS_ID-27	Workspace Customization	Verify changing the workspace icon	1. Click on a workspace.
-2. Click on "Edit Workspace".
-3. Change the icon and save.	• Users should be able to update workspace icons from a predefined list or upload a custom icon.
-• The new icon should reflect immediately.
-• If an unsupported format (e.g., .exe) is uploaded, an error should appear: "Invalid file format. Please upload a PNG or JPG file."	Medium	Pass/Fail
-TS_ID-28	Workspace Customization	Verify adding or modifying workspace description	1. Click on a workspace.
-2. Click on "Edit Workspace".
-3. Enter or modify the description.
-4. Click Save.	• Users should be able to add and edit workspace descriptions.
-• Changes should be saved and displayed immediately.
-• If no description is added, it should show "No description available."
-• The description text should be limited to 250 characters.	Medium	Pass/Fail
-TS_ID-29	Workspace Deletion	Verify the ability to delete a workspace	1. Click on a workspace.
-2. Click "Delete Workspace".
-3. Confirm deletion in the pop-up.	• A confirmation message should appear before deleting: "Are you sure you want to delete this workspace? This action cannot be undone."
-• Once deleted, the workspace should no longer appear in the workspace list.
-• Any associated chats, files, and settings should be deleted unless moved to another workspace.
-• Users should not be able to delete the last remaining workspace.	High	Pass/Fail
-TS_ID-30	Negative Scenario	Verify workspace creation limit (if any)	1. Create multiple workspaces.
-2. Check if there's a limit on the number of workspaces.	• If a maximum workspace limit exists (e.g., 10 workspaces), users should receive a message: "You have reached the maximum number of workspaces allowed."
-• If no limit exists, users should be able to create unlimited workspaces.	Medium	Pass/Fail
-TS_ID-31	Negative Scenario	Verify workspace switching during unsaved edits	1. Edit chat messages in a workspace.
-2. Switch to another workspace without saving.	• If there are unsaved changes, a warning should appear: "You have unsaved changes. Do you want to continue?"
-• If the user cancels, they should remain in the same workspace.	Medium	Pass/Fail
+Test Cases for Profile Management
+TC ID	Focus Area	Test Case Description	Test Steps	Expected Result	Priority	Actual Result
+TC-001	Profile Update	Verify updating profile details (Icon, Name, Job Role)	1. Open Profile settings.
+2. Click on ‘Edit Profile’.
+3. Change Name, Job Role, or Profile Icon.
+4. Click Save.	- The updated name, job role, and icon should reflect immediately.
+- Profile details should persist even after logging out and logging in again.
+- Only valid image formats (JPEG, PNG) should be accepted for the profile icon.
+- If an invalid file format is uploaded, a clear error message should be displayed.	Medium	Pass/Fail
+TC-002	Profile Update	Verify empty name validation	1. Open Profile settings.
+2. Click Edit Profile.
+3. Remove the existing name and click Save.	- The system should show an error message: "Name cannot be empty."
+- The profile update should be prevented until a valid name is entered.	High	Pass/Fail
+TC-003	Manage Shared Links	Verify managing shared links	1. Open Profile settings.
+2. Click on ‘Manage Shared Links’.
+3. View the list of shared links.	- The system should display a list of all active shared links.
+- Each shared link should have an option to disable or remove.
+- Clicking on remove should revoke access to the shared link.
+- Unauthorized users should not be able to manage shared links.	High	Pass/Fail
+TC-004	Manage Shared Links	Verify removing a shared link	1. Open Manage Shared Links.
+2. Click on Remove for a shared link.
+3. Confirm removal.	- The link should be instantly disabled, and the recipient should no longer have access.
+- A confirmation message should be displayed: "Shared link removed successfully."	High	Pass/Fail
+TC-005	Accessibility Options	Verify adjusting accessibility options (Font Size, Contrast)	1. Open Profile settings.
+2. Click Accessibility.
+3. Toggle Font Size and Contrast settings.	- The font size should increase/decrease immediately upon selection.
+- UI contrast should adjust based on user preferences.
+- Changes should be saved and remain after logout.	Medium	Pass/Fail
+TC-006	Delete All Chats	Verify deleting all chats from the system	1. Open Profile settings.
+2. Click ‘Delete All Chats’.
+3. Confirm deletion.	- A confirmation popup should appear before deletion.
+- Upon confirmation, all chat history should be permanently deleted.
+- This action should not be reversible.
+- The user should not be able to access deleted chats in history.	High	Pass/Fail
+TC-007	Delete All Chats	Verify canceling delete chat operation	1. Open Profile settings.
+2. Click ‘Delete All Chats’.
+3. Click Cancel instead of confirming deletion.	- The chat history should remain unchanged.
+- The user should be returned to the profile page without any data loss.	Medium	Pass/Fail
+TC-008	Dark & Light Mode	Verify switching between Dark and Light mode	1. Open Profile settings.
+2. Toggle between Dark and Light Mode.
+3. Observe UI changes.	- The theme should change instantly upon selection.
+- The user preference should persist after logging out and logging back in.
+- UI elements should remain visible and properly adjusted in both modes.
+- No overlapping text or broken UI should appear.	Low	Pass/Fail
+TC-009	Logout from All Devices	Verify logging out from all devices	1. Open Profile settings.
+2. Click ‘Logout from all devices’.
+3. Verify that all sessions are logged out.	- The user should be logged out from all active sessions on different devices.
+- A confirmation message should appear after logging out.
+- The next time the user tries to access the platform, they should be asked to log in again.	High	Pass/Fail
+TC-010	Single Device Logout	Verify logging out from the current device only	1. Open Profile settings.
+2. Click ‘Logout’.
+3. Verify logout behavior.	- The user should be logged out from the current device only.
+- The system should redirect the user to the login page.
+- The user should still be logged in on other active devices.	Medium	Pass/Fail
+Negative Test Cases
+TC ID	Focus Area	Test Case Description	Test Steps	Expected Result	Priority	Actual Result
+TC-011	Profile Update	Verify uploading an invalid profile picture	1. Open Profile settings.
+2. Try to upload a non-image file (e.g., .EXE, .ZIP).	- The system should reject unsupported file formats.
+- An error message should appear: "Invalid file format. Please upload a JPEG or PNG file."	Medium	Pass/Fail
+TC-012	Manage Shared Links	Verify unauthorized access to shared links	1. Log in as a non-admin user.
+2. Try to open Manage Shared Links.
+3. Attempt to remove a link.	- Unauthorized users should not have the ability to remove links.
+- The system should show an error: "You do not have permission to manage shared links."	High	Pass/Fail
+TC-013	Delete All Chats	Verify accidental chat deletion	1. Open Profile settings.
+2. Click ‘Delete All Chats’.
+3. Click Confirm by mistake.	- The system should have a "Are you sure?" popup to prevent accidental deletion.
+- Once confirmed, chats should be permanently deleted, and there should be no undo option.	High	Pass/Fail
+TC-014	Dark & Light Mode	Verify UI stability in dark mode	1. Switch to Dark Mode.
+2. Check UI elements, text readability, and contrast.	- No overlapping text or broken UI should appear.
+- Buttons and labels should be visible and accessible in both themes.	Low	Pass/Fail
+TC-015	Logout from All Devices	Verify login attempt after logging out from all devices	1. Log in to multiple devices.
+2. Click Logout from all devices.
+3. Try accessing the account without logging in.	- The system should prevent access without re-entering credentials.
+- Users should be redirected to the login page.	High	Pass/Fail
+This covers all scenarios including positive cases, validation errors, security checks, and UI behavior.
+
+Would you like any modifications or additional test cases? 🚀
+
+
+
+
+
+
+
+You said:
+Manage shared links is links that are already shared
+ChatGPT said:
+Got it! "Manage Shared Links" refers to links that are already shared, allowing the user to view, manage, or revoke access. Below are updated test cases considering this scenario.
+
+Test Cases for Managing Shared Links
+TC ID	Focus Area	Test Case Description	Test Steps	Expected Result	Priority	Actual Result
+TC-001	Shared Links	Verify accessing the list of shared links	1. Open Profile settings.
+2. Click on "Manage Shared Links".
+3. Verify the list of shared links is displayed.	- The system should display a list of all active shared links.
+- Each link should show the recipient, access level (View/Edit), and date shared.
+- Users should be able to filter/search shared links if needed.	High	Pass/Fail
+TC-002	Shared Links	Verify opening a shared chat link	1. Navigate to Manage Shared Links.
+2. Click on any shared link.
+3. Verify the linked chat opens correctly.	- Clicking the shared link should open the associated chat in the middle column.
+- If the chat is deleted or access is revoked, an error message should appear: "This chat is no longer available."	High	Pass/Fail
+TC-003	Shared Links	Verify removing a shared link	1. Open Manage Shared Links.
+2. Click "Remove" on a shared link.
+3. Confirm removal.	- The link should be instantly revoked, and recipients should no longer have access.
+- A confirmation message should appear: "Shared link removed successfully."	High	Pass/Fail
+TC-004	Shared Links	Verify removing multiple shared links at once	1. Open Manage Shared Links.
+2. Select multiple links.
+3. Click "Remove Selected".
+4. Confirm removal.	- The selected links should be removed in one action.
+- Users should receive a confirmation message listing all removed links.
+- The shared chats should no longer be accessible to recipients.	Medium	Pass/Fail
+TC-005	Shared Links	Verify user permissions on shared links	1. Log in as a non-admin user.
+2. Open Manage Shared Links.
+3. Try to remove a shared link.	- Non-admin users should not have permission to remove shared links.
+- An error message should be displayed: "You do not have permission to manage shared links."	High	Pass/Fail
+TC-006	Shared Links	Verify expired shared links	1. Open Manage Shared Links.
+2. Click an expired link.
+3. Verify system response.	- The system should show an error message: "This shared link has expired."
+- Expired links should be automatically removed from the list.	Medium	Pass/Fail
+TC-007	Shared Links	Verify updating shared link permissions	1. Open Manage Shared Links.
+2. Click "Edit" on a shared link.
+3. Change View to Edit (or vice versa).
+4. Click Save.	- Users should be able to modify access levels (View/Edit).
+- A confirmation message should appear: "Permissions updated successfully."
+- The recipient should receive a notification of permission change.	High	Pass/Fail
+TC-008	Shared Links	Verify invalid shared link behavior	1. Try to access a manually edited or corrupted shared link.
+2. Verify system response.	- The system should prevent access and show an error: "Invalid or broken link."	Medium	Pass/Fail
+Negative Test Cases
+TC ID	Focus Area	Test Case Description	Test Steps	Expected Result	Priority	Actual Result
+TC-009	Shared Links	Verify removing a link that has already been deleted	1. Open Manage Shared Links.
+2. Select a recently removed link.
+3. Click Remove again.	- The system should show an error: "This link has already been removed."	Medium	Pass/Fail
+TC-010	Shared Links	Verify trying to access a revoked link	1. Open a previously shared link in a different browser.
+2. The owner removes the link.
+3. Try to access the chat again.	- The recipient should see an error: "Access denied. This link is no longer available."	High	Pass/Fail
+TC-011	Shared Links	Verify removing all shared links at once	1. Open Manage Shared Links.
+2. Click "Remove All".
+3. Confirm removal.	- All shared links should be instantly revoked.
+- A confirmation message should list all removed links.
+- The user should be unable to undo this action.	High	Pass/Fail
