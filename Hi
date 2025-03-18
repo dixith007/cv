@@ -1,9 +1,17 @@
-TC-002	Chat Sharing	Verify that only authorized users can access the shared link	1. Generate a chat link.
-2. Share it with an unauthorized user (someone without permission).
-3. Attempt to open the link.	• Unauthorized users should see a message: "You do not have access to this chat."
-• The system should prevent unauthorized viewing/editing.	High	Pass/Fail
-TC-003	Chat Sharing	Verify that the chat link is accessible within the organization	1. Generate a chat link.
-2. Share it with a colleague inside the organization.
-3. Open the link from their system.	• The shared chat should open successfully.
-• The recipient should be able to view the conversation.
-• If edit permissions were granted, they should be able to send messages.
+Test Scenario	Focus Area	Test Case Description	Test Steps	Expected Result	Priority	Actual Result
+TS_ID-15	Chat Sharing	Verify the ability to generate a shareable chat link	1. Open an existing chat.
+2. Click the "Share" button.
+3. Select "Generate Link".
+4. Verify if a shareable link is created.	• A unique, shareable link should be generated.
+• The system should show a confirmation message like "Chat link created successfully".
+• Users should be able to copy the link using a "Copy Link" button.
+• The link should be accessible only within the organization.	High	Pass/Fail
+TS_ID-16	Chat Sharing	Verify that only authorized users can access shared chat	1. Copy the generated chat link.
+2. Open the link in another browser (logged in as an authorized organization member).
+3. Verify if the chat is accessible.	• Only users who are part of the same organization should be able to open the chat.
+• Unauthorized users (e.g., guests, external users) should see an error message like "Access Denied – This chat is restricted to your organization".
+• If the user has view-only access, they should not be able to edit the chat.	High	Pass/Fail
+TS_ID-17	Chat Sharing	Verify restricted access for unauthorized users	1. Copy the generated chat link.
+2. Open the link in Incognito mode or using a different email domain.	• The system should block access for unauthorized users.
+• An error message should appear: "You do not have permission to view this chat."
+• If an unauthorized user tries to access, they should be redirected to a login screen.	High	Pas
