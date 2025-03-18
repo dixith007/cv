@@ -1,9 +1,8 @@
-TS_ID-01	Chat History	Verify chat history categorization by Day, Week, Month, and Year	1. Open the application.
-2. Navigate to the chat history section on the left column.
-3. Observe how chats are grouped.	• The chat history should be categorized into sections: Today, This Week, This Month, and Older Chats (Yearly).
-• There should be clear headers like “Today”, “This Week”, “This Month”, and “Older Chats” to indicate the category.
-• If no chats exist for a category, it should not be shown.
-• Each chat should be listed under the correct category based on the last activity timestamp.
-• The categorization should automatically update as days/weeks/months pass.
-• Users cannot manually change the category of a chat.
-• The UI should remain clear, with no overlapping text or broken alignment.	High	Pass/Fail
+Verify the ability to search for a chat	1. Open the application.
+2. Locate the Search Bar in the left panel.
+3. Enter a keyword matching an existing chat.
+4. Press Enter or click the search icon.	• The search should return all chats containing the exact keyword.
+• The matching word should be highlighted inside the chat history results.
+• The search should be case-insensitive (e.g., searching for "Meeting" or "meeting" should return the same results).
+• If multiple chats match, all should be displayed in descending order of relevance (latest chats first).
+• The UI should remain clear, and search results should be easy to scroll through.
