@@ -1,41 +1,45 @@
+Temporary Chat Test Cases
 TC ID	Focus Area	Test Case Description	Test Steps	Expected Result	Priority	Actual Result
-TC-001	Theme Switching	Verify switching from Light Mode to Dark Mode	1. Open Profile Settings.
-2. Locate the "Theme" or "Appearance" option.
-3. Select Dark Mode.
-4. Observe the UI changes.	- The UI should immediately switch to Dark Mode.
-- The background should turn dark, and text should become light-colored for readability.
-- Icons, buttons, and UI elements should be clearly visible.
-- A message should confirm: "Dark Mode enabled."	High	Pass/Fail
-TC-002	Theme Switching	Verify switching from Dark Mode to Light Mode	1. Open Profile Settings.
-2. Locate the "Theme" option.
-3. Select Light Mode.
-4. Observe the UI changes.	- The UI should immediately switch to Light Mode.
-- The background should turn light, and text should become dark-colored.
-- There should be no visibility issues with UI elements.
-- A message should confirm: "Light Mode enabled."	High	Pass/Fail
-TC-003	Theme Switching	Verify that theme settings persist after logout & login	1. Switch to Dark Mode.
-2. Logout of the platform.
-3. Login again.
-4. Observe if the selected theme persists.	- The selected theme (Light/Dark Mode) should persist after logging out and logging in.
-- Users should not have to manually switch the theme again.	Medium	Pass/Fail
-TC-004	Theme Switching	Verify system behavior when toggling the theme multiple times	1. Switch between Light and Dark Mode rapidly (5-6 times).
-2. Observe any performance issues or glitches.	- The system should smoothly transition between themes.
-- No UI flickering, lag, or crashes should occur.
-- The final selected theme should remain active.	Medium	Pass/Fail
-TC-005	Theme Switching	Verify theme visibility and readability in Dark Mode	1. Switch to Dark Mode.
-2. Check the visibility of text, buttons, icons, and chat messages.	- Text should be readable (light-colored on dark background).
-- Buttons, icons, and hover effects should be visible.
-- No overlapping text, missing elements, or broken UI should be present.	High	Pass/Fail
-TC-006	Theme Switching	Verify theme visibility and readability in Light Mode	1. Switch to Light Mode.
-2. Check the visibility of text, buttons, icons, and chat messages.	- Text should be readable (dark-colored on light background).
-- UI elements should be clearly distinguishable.
-- No white-on-white or unreadable elements should be present.	High	Pass/Fail
-TC-007	Theme Switching	Verify theme settings on different devices	1. Switch to Dark Mode on Device A (Laptop).
-2. Open the platform on Device B (Mobile or Tablet).
-3. Observe if the selected theme applies.	- The theme setting should be device-specific.
-- If a user logs into a different device, they may need to reselect the theme unless a sync feature is enabled.	Medium	Pass/Fail
-Negative & Edge Cases
-TC ID	Focus Area	Test Case Description	Test Steps	Expected Result	Priority	Actual Result
-TC-008	Theme Switching	Verify system behavior if theme toggle fails	1. Try switching between Light and Dark Mode.
-2. If the theme doesn't change, check for an error message.	- The system should display an error message if theme switching fails.
-- Example: "Unable to switch themes. Please try again."
+TC-001	Temporary Chat Toggle	Verify enabling Temporary Chat Mode	1. Click on the Temporary Chat icon next to "GPT-4" in the UI.
+2. Observe the UI changes after clicking.	• The Temporary Chat icon should change to an active state (highlighted/colored).
+• A message or tooltip should appear indicating "Temporary Chat Enabled."
+• A warning message should appear, stating that the chat will not be saved.	High	Pass/Fail
+TC-002	Temporary Chat Toggle	Verify disabling Temporary Chat Mode	1. Click on the Temporary Chat icon again to turn it off.
+2. Observe the UI changes.	• The Temporary Chat icon should return to its inactive/default state.
+• A confirmation message should appear: "Temporary Chat Disabled."
+• The next new chat should be saved in chat history.	High	Pass/Fail
+TC-003	Chat History	Ensure Temporary Chats are not saved	1. Enable Temporary Chat Mode.
+2. Start a conversation and enter some messages.
+3. Disable Temporary Chat.
+4. Check the chat history section.	• The conversation should not appear in the chat history.
+• A warning before starting the chat should confirm: "This chat will not be saved."	High	Pass/Fail
+TC-004	UI Feedback	Verify Temporary Chat Mode provides proper UI feedback	1. Enable Temporary Chat Mode.
+2. Observe if there is a clear visual indicator that Temporary Chat is active.	• There should be a badge, icon, or colored indicator showing that Temporary Chat is enabled.
+• The UI should clearly indicate “Temporary Chat” at the top of the chat window.	Medium	Pass/Fail
+TC-005	File Upload Restriction	Verify that file uploads are not allowed in Temporary Chat	1. Enable Temporary Chat Mode.
+2. Try to upload a file (PDF, DOC, etc.).	• The system should block file uploads with a message: "File uploads are disabled in Temporary Chat."
+• The upload button should be disabled.	High	Pass/Fail
+TC-006	Chat Sharing Restriction	Ensure chat sharing is disabled in Temporary Chat	1. Enable Temporary Chat Mode.
+2. Click on the "Share Chat" option.	• A message should appear: "Sharing is disabled in Temporary Chat Mode."
+• The "Share" button should be grayed out or hidden.	High	Pass/Fail
+TC-007	Refresh Page	Verify behavior when refreshing the page during Temporary Chat	1. Enable Temporary Chat Mode.
+2. Start a chat session and send some messages.
+3. Refresh the browser tab.	• The entire chat should disappear after refresh.
+• A message should confirm: "Temporary Chat has ended due to page refresh."	Medium	Pass/Fail
+TC-008	Logout Behavior	Verify that Temporary Chat clears on logout	1. Enable Temporary Chat Mode.
+2. Start a conversation.
+3. Log out and log back in.	• The temporary chat should be completely erased after logout.
+• Upon re-login, the chat panel should start fresh.	High	Pass/Fail
+TC-009	Multiple Chat Handling	Verify switching between Temporary and Normal Chats	1. Start a regular chat.
+2. Enable Temporary Chat Mode.
+3. Check if the new chat remains separate from saved chats.	• The Temporary Chat should be visually separate from regular chats.
+• The saved chat should not be affected when Temporary Chat is active.	Medium	Pass/Fail
+TC-010	Icon Clickability	Ensure the Temporary Chat icon is always clickable	1. Try clicking the Temporary Chat icon multiple times.
+2. Verify its responsiveness.	• The icon should respond instantly to clicks.
+• The system should not freeze or lag when enabling/disabling Temporary Chat.	High	Pass/Fail
+Key Notes:
+Negative Scenarios Covered:
+Chat history should not retain temporary chats.
+File uploads and sharing should be restricted.
+Page refresh, logout, and workspace switching should clear the chat.
+The icon should always be clickable and provide immediate feedback.
