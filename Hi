@@ -1,45 +1,9 @@
-Temporary Chat Test Cases
-TC ID	Focus Area	Test Case Description	Test Steps	Expected Result	Priority	Actual Result
-TC-001	Temporary Chat Toggle	Verify enabling Temporary Chat Mode	1. Click on the Temporary Chat icon next to "GPT-4" in the UI.
-2. Observe the UI changes after clicking.	• The Temporary Chat icon should change to an active state (highlighted/colored).
-• A message or tooltip should appear indicating "Temporary Chat Enabled."
-• A warning message should appear, stating that the chat will not be saved.	High	Pass/Fail
-TC-002	Temporary Chat Toggle	Verify disabling Temporary Chat Mode	1. Click on the Temporary Chat icon again to turn it off.
-2. Observe the UI changes.	• The Temporary Chat icon should return to its inactive/default state.
-• A confirmation message should appear: "Temporary Chat Disabled."
-• The next new chat should be saved in chat history.	High	Pass/Fail
-TC-003	Chat History	Ensure Temporary Chats are not saved	1. Enable Temporary Chat Mode.
-2. Start a conversation and enter some messages.
-3. Disable Temporary Chat.
-4. Check the chat history section.	• The conversation should not appear in the chat history.
-• A warning before starting the chat should confirm: "This chat will not be saved."	High	Pass/Fail
-TC-004	UI Feedback	Verify Temporary Chat Mode provides proper UI feedback	1. Enable Temporary Chat Mode.
-2. Observe if there is a clear visual indicator that Temporary Chat is active.	• There should be a badge, icon, or colored indicator showing that Temporary Chat is enabled.
-• The UI should clearly indicate “Temporary Chat” at the top of the chat window.	Medium	Pass/Fail
-TC-005	File Upload Restriction	Verify that file uploads are not allowed in Temporary Chat	1. Enable Temporary Chat Mode.
-2. Try to upload a file (PDF, DOC, etc.).	• The system should block file uploads with a message: "File uploads are disabled in Temporary Chat."
-• The upload button should be disabled.	High	Pass/Fail
-TC-006	Chat Sharing Restriction	Ensure chat sharing is disabled in Temporary Chat	1. Enable Temporary Chat Mode.
-2. Click on the "Share Chat" option.	• A message should appear: "Sharing is disabled in Temporary Chat Mode."
-• The "Share" button should be grayed out or hidden.	High	Pass/Fail
-TC-007	Refresh Page	Verify behavior when refreshing the page during Temporary Chat	1. Enable Temporary Chat Mode.
-2. Start a chat session and send some messages.
-3. Refresh the browser tab.	• The entire chat should disappear after refresh.
-• A message should confirm: "Temporary Chat has ended due to page refresh."	Medium	Pass/Fail
-TC-008	Logout Behavior	Verify that Temporary Chat clears on logout	1. Enable Temporary Chat Mode.
-2. Start a conversation.
-3. Log out and log back in.	• The temporary chat should be completely erased after logout.
-• Upon re-login, the chat panel should start fresh.	High	Pass/Fail
-TC-009	Multiple Chat Handling	Verify switching between Temporary and Normal Chats	1. Start a regular chat.
-2. Enable Temporary Chat Mode.
-3. Check if the new chat remains separate from saved chats.	• The Temporary Chat should be visually separate from regular chats.
-• The saved chat should not be affected when Temporary Chat is active.	Medium	Pass/Fail
-TC-010	Icon Clickability	Ensure the Temporary Chat icon is always clickable	1. Try clicking the Temporary Chat icon multiple times.
-2. Verify its responsiveness.	• The icon should respond instantly to clicks.
-• The system should not freeze or lag when enabling/disabling Temporary Chat.	High	Pass/Fail
-Key Notes:
-Negative Scenarios Covered:
-Chat history should not retain temporary chats.
-File uploads and sharing should be restricted.
-Page refresh, logout, and workspace switching should clear the chat.
-The icon should always be clickable and provide immediate feedback.
+TC ID	Test Scenario	Test Case Description	Test Steps	Expected Result	Priority	Actual Result
+UI-001	Verify startup page layout	Ensure that the startup page loads correctly on launch	1. Open the application 2. Observe the middle column on launch	- The middle column should display a welcoming startup page similar to ChatGPT. - The page should contain a search bar, sample queries, and available features. - The layout should be clean, well-organized, and not cluttered. - There should be no overlapping elements or broken UI.	High	Pass/Fail
+UI-002	Verify sample queries & functions	Ensure that sample queries and functions are displayed	1. Open the application 2. Check for sample queries and options (e.g., “Help me write”, “Create image”)	- Sample queries should be displayed below the search input. - Clicking on a sample query should pre-fill the chat input field. - Users should be able to click on each option and get appropriate results.	Medium	Pass/Fail
+UI-003	Verify input field functionality	Ensure that users can type and submit queries	1. Click on the input field 2. Type a message 3. Press Enter	- The input field should allow users to type queries without any delay or UI lag. - Entering text should enable the "Send" button. - Pressing Enter should send the query and display it in the chat window.	High	Pass/Fail
+UI-004	Verify file upload option	Ensure users can upload files into the chat	1. Click on the "Upload" button 2. Select a file (PDF, DOC, TXT) 3. Verify file appears in the chat	- Supported files should upload successfully and be visible in the chat. - Uploaded files should display the filename and size. - Unsupported files should trigger a clear error message. - Users should be able to delete an uploaded file.	High	Pass/Fail
+UI-005	Verify web search functionality	Ensure users can perform web searches from the chat	1. Click on the "Search" button 2. Select "Intranet" or "Internet" search 3. Enter a query and submit	- Search results should appear with relevant information. - Users should be able to switch between Intranet and Internet results. - Clicking on a search result should open it in a new tab. - The search bar should provide auto-suggestions.	High	Pass/Fail
+UI-006	Verify speech-to-text option	Ensure speech-to-text converts voice input correctly	1. Click on the "Microphone" icon 2. Speak a sentence 3. Verify the text appears in the chat input box	- Speech should be accurately converted to text. - The microphone button should provide visual feedback while recording. - If speech is not recognized, an error message should prompt the user. - Users should be able to edit the transcribed text before sending.	Medium	Pass/Fail
+UI-007	Verify help button functionality	Ensure the help button provides assistance options	1. Click the "Help" button at the bottom right 2. Check the available options	- The help menu should contain FAQs, keyboard shortcuts, admin contact, and announcements. - Clicking “Contact Admin” should provide email/chat options. - Announcements should be visible with timestamps.	Medium	Pass/Fail
+UI-008	Verify UI responsiveness	Ensure the startup page adjusts properly on different screen sizes	1. Resize the browser window 2. Observe the layout changes	- Elements should be properly aligned on different screen sizes. - No text should overlap or get cut off. - Mobile view should provide a user-friendly interface.	High	Pass/Fail
