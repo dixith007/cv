@@ -1,11 +1,83 @@
-C ID	Test Scenario	Test Case Description	Test Steps	Expected Result	Priority	Actual Result
-QA-001	Verify "@" for calling assistants	Ensure typing "@" displays a list of AI assistants	1. Open the chat input box 2. Type "@" 3. Observe the dropdown list	- A dropdown list should appear showing available AI assistants. - Users should be able to select an assistant by clicking or pressing Enter. - The assistant’s name should autofill in the input box.	High	Pass/Fail
-QA-002	Verify invalid assistant mention	Ensure invalid assistant names are not recognized	1. Type "@randomword" 2. Press Enter	- The system should not recognize the invalid assistant. - An error message should appear: "Assistant not found."	Medium	Pass/Fail
-QA-003	Verify "/" for calling prompts	Ensure typing "/" displays available system commands	1. Open the chat input box 2. Type "/"	- A dropdown list should appear with available commands like /summarize, /translate, /help, etc. - Users should be able to select a command via click or Enter key. - The command should execute correctly after submission.	High	Pass/Fail
-QA-004	Verify invalid system command	Ensure system handles incorrect commands gracefully	1. Type "/wrongcommand" 2. Press Enter	- The system should not execute an invalid command. - An error message should appear: "Command not recognized."	Medium	Pass/Fail
-QA-005	Verify "#" for attaching stored files	Ensure typing "#" allows selecting previously uploaded files	1. Type "#" in the chat input 2. Observe the dropdown list 3. Select a file	- A dropdown list of previously uploaded files should appear. - Clicking a file should attach it to the chat input. - The file name and size should be visible before sending.	High	Pass/Fail
-QA-006	Verify attachment of unsupported file formats	Ensure only supported files can be attached	1. Type "#" 2. Try selecting an unsupported file format	- The system should not allow unsupported files to be attached. - An error message should indicate supported formats.	High	Pass/Fail
-QA-007	Verify "!" for calling pre-built functions	Ensure typing "!" displays available AI functions	1. Open the chat input box 2. Type "!" 3. Observe the dropdown list	- A list of functions (e.g., !summarize, !analyze, !convert) should appear. - Users should be able to select and execute a function. - The function should process and return results correctly.	High	Pass/Fail
-QA-008	Verify invalid function execution	Ensure invalid functions are handled properly	1. Type "!nonexistentfunction" 2. Press Enter	- The system should not execute invalid functions. - A message should notify the user: "Function not available."	Medium	Pass/Fail
-QA-009	Verify auto-completion of quick actions	Ensure system suggests completions when typing special characters	1. Type "@a" 2. Type "/s" 3. Type "!c"	- The system should suggest matching assistants/commands/functions as the user types. - Matching items should be highlighted for quick selection.	Medium	Pass/Fail
-QA-010	Verify behavior when no matches are found	Ensure system provides feedback when no relevant suggestions exist	1. Type "@xyz" 2. Observe the dropdown list	- If no matches exist, a message should say "No results found." - The input box should remain functional for manual typing.	Medium	Pass/Fail
+TC ID	Focus Area	Test Case Description	Test Steps	Expected Result	Priority	Actual Result
+TS_ID-01	Startup Page	Verify the startup page layout	"1. Open the application
+2. Observe the middle column on launch"	"1.  The middle column should display a welcoming startup page, similar to ChatGPT.
+2.  Users should see sample queries and available features to help them get started.
+3.  If the user has previous chats, they should see a message prompting them to continue where they left off.
+4. The layout should be clean, well-organized, and not cluttered, there should be no overlapping elements or broken UI."	Medium	Pass/Fail
+TS_ID-02	File Upload	Verify file upload functionality	"1. Click the 'Upload' button
+2. Select a file (PDF)
+3. Verify file appears in the chat window"	"1.The upload button should be clearly visible in middle column 2.The button should be clickable. 
+3.Users should be able to upload files in supported formats like PDFs.
+4.The system should show a progress indicator while uploading., If the upload is interrupted, the system should retry or notify the user.
+5 The uploaded file should be clearly visible in the chat window, showing the filename and size.
+6.The system should allow users to view  the file after uploading.
+7. If an unsupported file type is uploaded, a clear error message should be displayed, guiding users on supported formats.
+8. Users should be able to delete an uploaded file if needed."	High	Pass/Fail
+TS_ID-03	Web Search	Verify web search integration	"1. Click the 'Web Search' option
+2. Select 'Intranet' or 'Internet' search
+3. Enter a query and submit"	"1. The websearch option should be clearly visible.
+2. Users should see an option to switch between Intranet (internal data) and Internet (external search).
+            *Intranet mode: The system should fetch results from internal knowledge bases.
+             *Internet mode:  The sysytem should fetch from the web .
+3. The system should fetch relevant results based on the user’s search.
+4. If  a users performs a search for resticted internal data,the system should show a warning message.
+5. Search results should be well-structured, with clickable links, short descriptions, and proper formatting.
+6.The system should not mix intranet resluts with internet results.
+"	High	Pass/Fail
+TS_ID-04	Speech-to-Text	Verify speech-to-text functionality	"1. Click the 'Microphone' icon
+2. Speak a sentence
+3. Verify the text appears in the chat input box"	"1. Locate the microphone icon next to the text input field,
+2. The microphone button should be visible,It should be clickable and responsive.  
+3.When users speak into the microphone, their words should accurately convert into text in real-time.
+4. The transcribed text should be editable before sending, allowing corrections if needed.
+5. If the system fails to recognize speech, it should show a clear message suggesting the user try again.
+6. The microphone button should provide visual feedback ( blinking icon) to indicate it's recording.
+7. Speak in   supported language , If the language is unsupported, the system should notify the user.
+8. Click the microphone . Stay silent for 10 second- A message should appear: ""No speech detected. Please try again"""	Medium	Pass/Fail
+TS_ID-05	Shortcuts	Verify AI Assistant shortcuts (@, /, #, !)	"
+1. Open the chat input box 
+      1) Type '@' in the chat input box
+      2) Type '/' in the input box
+      3) Type '#' to attach stored files
+      4) Type '!' to call pre-built functions
+2. Observe the dropdown list"	"Navigate to chat input box and type below shortcuts in middle column
+1.  Typing '@' should display a list of available AI assistants users can mention.
+2. Typing '/' should list suggested commands , the command should execute correctly after submission.
+3. Typing '#' should show a dropdown of previously uploaded files, allowing users to attach them easily.
+4. Typing '!' should display available pre-built AI functions, making it easy for users to interact with them, user should be able to select and execute a function.
+5. The system should auto-complete shortcut commands for ease of use.
+6. Type ""@randomword"" press enter -The system should not recognize the invalid assistant(An error message should appear)
+"	High	Pass/Fail
+TS_ID-06	Help Section	Verify the help button functionality	"1. Click the 'Help' button at the bottom right corner
+2. Check available options"	"1. Locate at help button in the bottom  right, it should be clickable.
+2.Clicking the Help button should open a menu with FAQs, keyboard shortcuts, admin contact, and announcements.
+3. The FAQ section should contain clear answers to common questions.
+4. Clicking on 'Contact Admin' should provide an email or chat option for support.
+5.Each  Announcements should have visible   timestamp, ensuring users see important updates."	Medium	Pass/Fail
+TS_ID-07	Model Selection	Verify LLM model selection	"1. Click 'Quick Settings'
+2. Select a different LLM model from the dropdown"	"1. Locate the quick settings icon in the top right corner, click on that.
+2. The dropdown menu should appear instantly. 
+3.The list should contain all available LLM models.
+4. Users should be able to select different AI models for chat assistance.
+5. The selected model should apply instantly without needing to refresh the page.
+6. If the selected model fails to load, the system should fall back to the default model and notify the user."	High	Pass/Fail
+TS_ID-08	Temperature & Context Settings	Verify temperature and context length adjustment	"1. Open 'Quick Settings'
+2. Adjust the temperature and context length sliders
+3. Save changes"	" Locate the quick settings icon in the top right corner, click on that.
+1. Navigate to Temperature & Context Settings ,the slider move smoothly without lag.
+2. The displayed temperature and contect value should update dynamically.
+3. The temperature and context setting should affect immedately.
+4.  Saved settings should contain for future chats , unless  reset.
+5. The default values should be :-Temperature = 0.7, Context length = 4096.
+6. User should be able to modify them.
+7. The modified settings should contain after refresh.
+"	Medium	Pass/Fail
+TS_ID-09	Temporary Chat	Verify the temporary chat 	"1. Click on the Temporary Chat icon next to ""GPT-4"" in the UI.
+2. Enable Temporary Chat toggle.
+3. Start sending messages(temporary chat)"	"1. Navigate to the temporary chat icon near GPT-4, ensures its clickable.
+2. A message  should appear indicating ""Temporary Chat Enabled.""
+3.. The conversation should not appear in the chat history
+4. A warning message should appear, stating that the chat will not be saved.
+5. Ensure chat sharing is disabled in Temporary Chat	,"" A message should appear: ""Sharing is disabled in Temporary Chat Mode.""
+6. The temporary chat should be completely erased after logout.
+7. Upon re-login, the chat panel should start fresh  chat(not a temporary chat)."	Medium	Pass/Fail
