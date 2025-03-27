@@ -1,52 +1,12 @@
-Test Case: Verify Rename File Functionality
-Test Steps:
-
-Navigate to the left panel and click on the Files icon.
-
-Identify an existing file in the list.
-
-Click the Rename button next to the file name.
-
-Enter a new name in the input field.
-
-Press Enter or click Save to confirm.
-
-Expected Results:
-
-The Rename button should be clearly visible below the + New File button and next to each file.
-
-Clicking Rename should display an editable input field with the existing file name.
-
-The new name should be saved instantly and updated in the file list.
-
-If the name field is empty, an error message should appear:
-
-"File name cannot be empty."
-
-If the new name exceeds the character limit, a validation message should be displayed.
-
-Pressing Esc or refreshing the page should keep the original name unchanged.
-
 Test Case: Verify Delete File Functionality
-Test Steps:
-
-Navigate to the left panel and click on the Files icon.
-
-Identify an existing file in the list.
-
-Click the Delete button next to the file name.
-
-Confirm the deletion when prompted.
-
-Expected Results:
-
-The Delete button should be clearly visible next to each file.
-
-Clicking Delete should trigger a confirmation message (e.g., "Are you sure you want to delete this file?").
-
-If the user confirms, the file should be removed from the list immediately.
-
-If the user cancels, the file should remain unchanged.
-
-If an error occurs (e.g., network failure), a message should appear (e.g., "Unable to delete file. Please try again.").
-
+Test Case ID	FILE-02
+Test Scenario	Verify the delete functionality of a file.
+Test Steps	1. Navigate to the left panel and click on the Files icon.
+2. Identify an existing file in the list.
+3. Click the Delete button next to the file name.
+4. Confirm the deletion when prompted.
+Expected Results	1. The Delete button should be visible and clickable next to each file.
+2. Clicking Delete should trigger a confirmation message (e.g., "Are you sure you want to delete this file?").
+3. If the user confirms, the file should be removed from the list immediately.
+4. If the user cancels, the file should remain unchanged.
+5. If an error occurs (e.g., network failure), a message should appear (e.g., "Unable to delete file. Please try again.").
