@@ -1,8 +1,34 @@
-1. Naviagte to left column, The files icon  should be clearly visible below prompt icon,The file icon should be clickable. 
-2. Inside create file, click on choose file, enter file name and description.
-3. Users should be able to choose files in supported formats like PDFs.
-4. While creating a file, if the file/name/ field  is empty ,A validation message should appear:"Please select a file"/"File name is required".
-5. The file should uploaded successfully even without a desription.
-6. The selected file should be clearly visible in the  window, showing the filename and size.
-7. The system should allow users to view  the file after uploading.
-8. If an unsupported file type is uploaded, a clear error message should be displayed, guiding users on supported formats.
+Test Case: Verify File Upload Functionality
+Test Steps:
+
+Navigate to the left panel and click on the Files icon.
+
+Click on Create File, then:
+
+Click Choose File and select a file.
+
+Enter a File Name (optional: enter a description).
+
+Click Create to upload the file.
+
+Expected Results:
+
+The Files icon should be clearly visible and clickable in the left panel.
+
+Clicking Create File should display a form with File Upload, Name, and Description fields.
+
+Users should be able to select files in supported formats (e.g., PDFs).
+
+If the file or name field is empty, a validation message should appear:
+
+"Please select a file" (if no file is chosen).
+
+"File name is required" (if the name is empty).
+
+The file should upload successfully even without a description.
+
+The selected file should be visible in the file list, showing name and size.
+
+Users should be able to view the uploaded file after successful upload.
+
+If an unsupported file type is uploaded, a clear error message should be displayed.
