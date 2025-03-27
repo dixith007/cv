@@ -1,59 +1,9 @@
-Test Cases for Storing User-Specific/Created Prompts
-TS_ID	Feature	Test Case Description	Test Steps	Expected Result	Priority	Actual Result
-TS_ID-01	Create a Prompt	Verify that a user can create a new prompt	1. Open the application.
-2. Click on "+ New Prompt" button.
+Verify that a user can create a new prompt	"1. Open the application.
+2. Click on ""+ New Prompt"" button.
 3. Enter a name for the prompt.
 4. Enter prompt content.
-5. Click "Create".	• A new prompt should be created successfully.
-• The prompt should be stored and visible in the list.
-• The user should get a success confirmation.
-• The prompt name should be unique within the user’s prompts.	High	Pass/Fail
-TS_ID-02	Mandatory Fields	Verify behavior when creating a prompt without entering a name	1. Click on "+ New Prompt".
-2. Leave the "Name" field empty.
-3. Enter some content in "Prompt" field.
-4. Click "Create".	• The system should not allow submission.
-• An error message should be displayed: “Prompt name is required.”
-• The "Create" button should remain disabled until the name is entered.	High	Pass/Fail
-TS_ID-03	Mandatory Fields	Verify behavior when creating a prompt without entering content	1. Click on "+ New Prompt".
-2. Enter a name for the prompt.
-3. Leave the "Prompt" field empty.
-4. Click "Create".	• The system should not allow submission.
-• An error message should be displayed: “Prompt content is required.”
-• The "Create" button should remain disabled until content is entered.	High	Pass/Fail
-TS_ID-04	Character Limit	Verify character limit for the prompt name	1. Click on "+ New Prompt".
-2. Enter a name with more than the allowed character limit (e.g., 300 characters).
-3. Enter prompt content.
-4. Click "Create".	• The system should not allow the name beyond the character limit.
-• A warning message should be displayed: “Maximum character limit exceeded.”
-• The system should automatically trim the extra characters if applicable.	Medium	Pass/Fail
-TS_ID-05	Character Limit	Verify character limit for prompt content	1. Click on "+ New Prompt".
-2. Enter a valid name.
-3. Enter a very long prompt exceeding the system’s allowed character limit.
-4. Click "Create".	• The system should enforce the character limit.
-• If there is a limit, a message should appear: “Prompt content exceeds the maximum limit.”
-• If no limit, the prompt should be stored without errors.	Medium	Pass/Fail
-TS_ID-06	Duplicate Prompts	Verify that duplicate prompt names are not allowed	1. Create a prompt with the name "Test Prompt".
-2. Try to create another prompt with the same name.	• The system should not allow duplicate names.
-• An error message should be displayed: “Prompt name already exists.”
-• User should be prompted to enter a unique name.	High	Pass/Fail
-TS_ID-07	Prompt Search	Verify that a user can search for a created prompt	1. Create multiple prompts.
-2. Use the search bar to enter a keyword from an existing prompt.
-3. Observe the results.	• The search should return all prompts containing the keyword.
-• The keyword should be highlighted in results.
-• Search should be case-insensitive.
-• The results should be sorted by relevance or creation date.	High	Pass/Fail
-TS_ID-08	UI/UX	Verify that clicking "Cancel" returns the user to the main page	1. Click on "+ New Prompt".
-2. Click "Cancel" without entering any data.
-3. Observe the navigation.	• The user should be redirected back to the main prompt list.
-• No partial data should be saved when clicking "Cancel".	Low	Pass/Fail
-TS_ID-09	UI/UX	Verify that the prompt creation form resets after submission	1. Click on "+ New Prompt".
-2. Enter a name and content.
-3. Click "Create".
-4. Click "+ New Prompt" again.
-5. Observe the form fields.	• After successfully creating a prompt, the form should reset.
-• The previously entered data should not persist in the fields.	Low	Pass/Fail
-TS_ID-10	Accessibility	Verify keyboard accessibility for prompt creation	1. Open "+ New Prompt" form.
-2. Use the "Tab" key to navigate between fields.
-3. Press "Enter" to submit the form.	• The form should be fully navigable using only the keyboard.
-• The "Enter" key should submit the form successfully.
-• The focus should be visible while navigating fields.	Medium	Pass/Fail
+5. Click ""Create""."	"1.  A 'Pencil' icon should be visible in the left column below chat icon  and verify it  should be clickable.
+2. After clicking that ""+ New prompt "" button should be visible, click on that.
+3. Fill the fileds inside prompt name and prompt content., Click create.
+4. A new prompt should be created successfully.
+"
