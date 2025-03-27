@@ -1,9 +1,10 @@
-Verify that a user can create a new prompt	"1. Open the application.
-2. Click on ""+ New Prompt"" button.
-3. Enter a name for the prompt.
-4. Enter prompt content.
-5. Click ""Create"" button."	"1.  A 'Pencil' icon should be visible in the left column below chat icon  and verify it  should be clickable.
-2. After clicking that ""+ New prompt "" button should be visible and clickable.
-3. Fill the fileds inside prompt name and prompt content., Click create.
-4. A new prompt should be created successfully.
-5. The newly created prompt should be displayed in  the list on the left side below  search prompt ."
+Verify rename Prompt functionality	"1. Click on the rename icon next to Prompt name
+2. Enter new name in input field
+3. Press Enter or click save"	"1. The rename icon should be clearly visible next to Prompt name and clickable. 
+2. A rename input box should appear when clicking the rename icon. 
+3. The new name should be saved instantly in the prompt history list.
+4. If the name exceeds the character limit, a validation message should be displayed.
+5. If the user presses Esc or hits refersh, the prompt name should remain unchanged.
+6. If an empty name is entered, an error message should appear.
+7. If the name exceeds the character limit, a validation message should be displayed.
+"
