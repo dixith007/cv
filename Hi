@@ -1,14 +1,59 @@
-Manual Test Cases for Collection Management
+Test Cases for Storing User-Specific/Created Prompts
 TS_ID	Feature	Test Case Description	Test Steps	Expected Result	Priority	Actual Result
-TC_ID-01	Create Collection	Verify if a user can create a new collection	1. Open the application. 2. Click on the "New Collection" button. 3. Enter a Collection Name and Description. 4. Click the Create button.	✅ A new collection should be created. ✅ The collection should appear in the collection list. ✅ The entered name and description should be correctly saved and displayed.	High	Pass/Fail
-TC_ID-02	Create Collection	Verify creating a collection with an empty name	1. Click New Collection. 2. Leave the Name field blank. 3. Click Create.	✅ The system should show an error message like "Collection name is required." ✅ Collection should not be created.	High	Pass/Fail
-TC_ID-03	Create Collection	Verify creating a collection with special characters	1. Click New Collection. 2. Enter a name with special characters (@, #, $, %, ^). 3. Click Create.	✅ The system should allow/disallow special characters based on validation rules. ✅ If special characters are not allowed, an error message should appear.	Medium	Pass/Fail
-TC_ID-04	Rename Collection	Verify renaming an existing collection	1. Select an existing collection. 2. Click on the Rename option. 3. Enter a new name. 4. Click Save.	✅ The collection should be renamed successfully. ✅ The updated name should reflect immediately. ✅ The system should prevent duplicate names if not allowed.	High	Pass/Fail
-TC_ID-05	Rename Collection	Verify renaming a collection to an empty name	1. Select a collection. 2. Click on Rename. 3. Delete the name and leave it blank. 4. Click Save.	✅ The system should show an error message like "Collection name cannot be empty." ✅ The previous name should be retained.	High	Pass/Fail
-TC_ID-06	Delete Collection	Verify deleting an existing collection	1. Select a collection. 2. Click on the Delete option. 3. Confirm the delete action.	✅ The collection should be removed from the list. ✅ The system should show a success message: "Collection deleted successfully." ✅ The deleted collection should not appear in the search.	High	Pass/Fail
-TC_ID-07	Delete Collection	Verify canceling the delete operation	1. Click Delete Collection. 2. In the confirmation dialog, click Cancel instead of Confirm.	✅ The collection should not be deleted. ✅ The collection should remain in the list.	Medium	Pass/Fail
-TC_ID-08	Description Update	Verify updating a collection's description	1. Open an existing collection. 2. Click on the Edit Description option. 3. Modify the description. 4. Click Save.	✅ The new description should be updated and visible. ✅ Changes should be retained after page refresh.	Medium	Pass/Fail
-TC_ID-09	Search Collection	Verify searching for a collection by name	1. Click on the Search Bar. 2. Type an existing collection's name.	✅ The collection should appear in search results. ✅ The search should be case-insensitive. ✅ Partial search (e.g., "Proj" for "Project Docs") should work.	Medium	Pass/Fail
-TC_ID-10	Edge Case	Verify if a user can create duplicate collections	1. Create a collection with a specific name. 2. Try creating another collection with the same name.	✅ The system should allow/disallow duplicates based on rules. ✅ If not allowed, an error message should appear: "Collection name already exists."	Medium	Pass/Fail
-TC_ID-11	Page Refresh	Verify collection persistence after page refresh	1. Create a new collection. 2. Refresh the page.	✅ The collection should still be visible after refresh. ✅ No data should be lost.	Low	Pass/Fail
-TC_ID-12	UI Validation	Verify UI behavior when collections list is empty	1. Delete all collections. 2. Observe the UI.	✅ The UI should display a message: "No collections found." ✅ The New Collection button should still be available.	Low	Pass/Fail
+TS_ID-01	Create a Prompt	Verify that a user can create a new prompt	1. Open the application.
+2. Click on "+ New Prompt" button.
+3. Enter a name for the prompt.
+4. Enter prompt content.
+5. Click "Create".	• A new prompt should be created successfully.
+• The prompt should be stored and visible in the list.
+• The user should get a success confirmation.
+• The prompt name should be unique within the user’s prompts.	High	Pass/Fail
+TS_ID-02	Mandatory Fields	Verify behavior when creating a prompt without entering a name	1. Click on "+ New Prompt".
+2. Leave the "Name" field empty.
+3. Enter some content in "Prompt" field.
+4. Click "Create".	• The system should not allow submission.
+• An error message should be displayed: “Prompt name is required.”
+• The "Create" button should remain disabled until the name is entered.	High	Pass/Fail
+TS_ID-03	Mandatory Fields	Verify behavior when creating a prompt without entering content	1. Click on "+ New Prompt".
+2. Enter a name for the prompt.
+3. Leave the "Prompt" field empty.
+4. Click "Create".	• The system should not allow submission.
+• An error message should be displayed: “Prompt content is required.”
+• The "Create" button should remain disabled until content is entered.	High	Pass/Fail
+TS_ID-04	Character Limit	Verify character limit for the prompt name	1. Click on "+ New Prompt".
+2. Enter a name with more than the allowed character limit (e.g., 300 characters).
+3. Enter prompt content.
+4. Click "Create".	• The system should not allow the name beyond the character limit.
+• A warning message should be displayed: “Maximum character limit exceeded.”
+• The system should automatically trim the extra characters if applicable.	Medium	Pass/Fail
+TS_ID-05	Character Limit	Verify character limit for prompt content	1. Click on "+ New Prompt".
+2. Enter a valid name.
+3. Enter a very long prompt exceeding the system’s allowed character limit.
+4. Click "Create".	• The system should enforce the character limit.
+• If there is a limit, a message should appear: “Prompt content exceeds the maximum limit.”
+• If no limit, the prompt should be stored without errors.	Medium	Pass/Fail
+TS_ID-06	Duplicate Prompts	Verify that duplicate prompt names are not allowed	1. Create a prompt with the name "Test Prompt".
+2. Try to create another prompt with the same name.	• The system should not allow duplicate names.
+• An error message should be displayed: “Prompt name already exists.”
+• User should be prompted to enter a unique name.	High	Pass/Fail
+TS_ID-07	Prompt Search	Verify that a user can search for a created prompt	1. Create multiple prompts.
+2. Use the search bar to enter a keyword from an existing prompt.
+3. Observe the results.	• The search should return all prompts containing the keyword.
+• The keyword should be highlighted in results.
+• Search should be case-insensitive.
+• The results should be sorted by relevance or creation date.	High	Pass/Fail
+TS_ID-08	UI/UX	Verify that clicking "Cancel" returns the user to the main page	1. Click on "+ New Prompt".
+2. Click "Cancel" without entering any data.
+3. Observe the navigation.	• The user should be redirected back to the main prompt list.
+• No partial data should be saved when clicking "Cancel".	Low	Pass/Fail
+TS_ID-09	UI/UX	Verify that the prompt creation form resets after submission	1. Click on "+ New Prompt".
+2. Enter a name and content.
+3. Click "Create".
+4. Click "+ New Prompt" again.
+5. Observe the form fields.	• After successfully creating a prompt, the form should reset.
+• The previously entered data should not persist in the fields.	Low	Pass/Fail
+TS_ID-10	Accessibility	Verify keyboard accessibility for prompt creation	1. Open "+ New Prompt" form.
+2. Use the "Tab" key to navigate between fields.
+3. Press "Enter" to submit the form.	• The form should be fully navigable using only the keyboard.
+• The "Enter" key should submit the form successfully.
+• The focus should be visible while navigating fields.	Medium	Pass/Fail
