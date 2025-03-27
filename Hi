@@ -2,8 +2,8 @@ Verify that a user can create a new prompt	"1. Open the application.
 2. Click on ""+ New Prompt"" button.
 3. Enter a name for the prompt.
 4. Enter prompt content.
-5. Click ""Create""."	"1.  A 'Pencil' icon should be visible in the left column below chat icon  and verify it  should be clickable.
-2. After clicking that ""+ New prompt "" button should be visible, click on that.
+5. Click ""Create"" button."	"1.  A 'Pencil' icon should be visible in the left column below chat icon  and verify it  should be clickable.
+2. After clicking that ""+ New prompt "" button should be visible and clickable.
 3. Fill the fileds inside prompt name and prompt content., Click create.
 4. A new prompt should be created successfully.
-"
+5. The newly created prompt should be displayed in  the list on the left side below  search prompt ."
