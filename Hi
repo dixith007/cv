@@ -1,37 +1,40 @@
-Test Cases for Create Collection Functionality
-Test Case ID	Test Case Description	Test Steps	Expected Result
-TC_01	Verify that a user can create a new collection	1. Click on the "Create Collection" button.
-2. Enter a Collection Name.
-3. Select files from the file list.
-4. Enter a description (optional).
-5. Click "Create".	1. The "Create Collection" form should open.
-2. Users should be able to enter a name, select multiple files, and enter a description.
-3. The new collection should be successfully created and visible in the list.
-TC_02	Verify that a collection cannot be created without a name	1. Click on "Create Collection".
-2. Do not enter a Collection Name.
-3. Select files and click "Create".	A validation message should appear: "Collection name is required."
-TC_03	Verify that a collection cannot be created without selecting files	1. Click on "Create Collection".
-2. Enter a Collection Name.
-3. Do not select any files.
-4. Click "Create".	A validation message should appear: "Please select at least one file."
-TC_04	Verify the file selection dropdown functionality	1. Click on the file dropdown.
-2. Search for a specific file.
-3. Select a file from the list.	1. The dropdown should display all available files.
-2. The user should be able to search for files.
-3. The selected file should be added to the collection.
-TC_05	Verify that a collection can be created with a description	1. Click "Create Collection".
-2. Enter a Collection Name.
-3. Select one or more files.
-4. Enter a description.
-5. Click "Create".	1. The collection should be created successfully.
-2. The description should be saved and visible when viewing the collection.
-TC_06	Verify the behavior when trying to create a duplicate collection name	1. Create a collection with a specific name.
-2. Try to create another collection with the same name and files.
-3. Click "Create".	The system should either allow duplicates or display an error message like "Collection name already exists."
-TC_07	Verify the "Cancel" button functionality	1. Click "Create Collection".
-2. Enter a name, select files, and enter a description.
-3. Click "Cancel".	1. The collection creation form should close.
-2. No collection should be created.
-TC_08	Verify UI elements on the Create Collection page	1. Open the Create Collection page.
-2. Check for all elements: Collection Name, File selection, Description input, Create & Cancel buttons.	1. All UI elements should be present and functional.
-2. Buttons should be clickable.
+	FILE Functionality	Verify File functionality	"1. Navigate to the left panel and click on the Files icon.
+2. Click on Create File
+3. Click Choose File and select a file.
+4. Enter a File Name (optional: enter a description).
+5. Click Create to upload the file."	"1. Naviagte to left column, The files icon  should be clearly visible below prompt icon,The file icon should be clickable. 
+2. Clicking Create File should display a form with File , Name, and Description fields.
+3. Users should be able to choose files in supported formats like PDFs.
+4. If the file or name field is empty, a validation message should appear:
+           ""Please select a file"" (if no file is chosen).
+            ""File name is required"" (if the name is empty).
+5. The file should uploaded successfully even without a desription.
+6. The selected file should be clearly visible in the  window, showing the filename and size.
+7. If an unsupported file type is uploaded, a clear error message should be displayed, guiding users on supported formats.
+"
+		Verify Rename File Functionality	"1. Navigate to the left panel and click on the Files icon.
+2. Click the Rename button next to the file name.
+3. Enter a new name in the input field.
+4. Enter or click Save to confirm."	"1. The Rename button should be clearly visible next to each file.
+2. Clicking Rename should display an editable input field with the existing file name.
+3. The new name should be saved instantly and updated in the file list.
+4. If the name field is empty, an error message should appear:
+     ""File name cannot be empty.""
+5. If the new name exceeds the character limit, a validation message should be displayed.
+6. Pressing Esc or refreshing the page should keep the original name unchanged."
+		 Verify Delete File Functionality	"1. Navigate to the left panel and click on the Files icon.
+2. Identify an existing file in the list.
+3. Click the Delete button next to the file name.
+4. Confirm the deletion when prompted."	"1. The Delete button should be visible and clickable next to each file.
+2. Clicking Delete should trigger a confirmation message (e.g., ""Are you sure you want to delete this file?"").
+3. If the user confirms, the file should be removed from the list immediately.
+4. If the user cancels, the file should remain unchanged.
+5. If an error occurs (e.g., network failure), a message should appear (e.g., ""Unable to delete file. Please try again."")."
+		Verify that users can search for files using the search bar.	"1. Navigate to the left panel and click on the Files icon.
+2. Locate the Search bar at the top of the file list.
+3. Enter a valid file name or part of the name.
+4. Observe the search results."	"1. The Search bar should be clearly visible and functional.
+2. Typing a valid file name should dynamically filter the file list, showing only matching results.
+3. If no matching file is found, a message should appear (e.g., ""No files found."").
+4. Search should be case-insensitive (e.g., searching ""report"" should match ""Report.pdf"").
+5.  Search results should update dynamically as the users type more letters."
