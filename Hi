@@ -1,10 +1,8 @@
-Verify rename Prompt functionality	"1. Click on the rename icon next to Prompt name
-2. Enter new name in input field
-3. Press Enter or click save"	"1. The rename icon should be clearly visible next to Prompt name and clickable. 
-2. A rename input box should appear when clicking the rename icon. 
-3. The new name should be saved instantly in the prompt history list.
-4. If the name exceeds the character limit, a validation message should be displayed.
-5. If the user presses Esc or hits refersh, the prompt name should remain unchanged.
-6. If an empty name is entered, an error message should appear.
-7. If the name exceeds the character limit, a validation message should be displayed.
-"
+1. Naviagte to left column, The files icon  should be clearly visible below prompt icon,The file icon should be clickable. 
+2. Inside create file, click on choose file, enter file name and description.
+3. Users should be able to choose files in supported formats like PDFs.
+4. While creating a file, if the file/name/ field  is empty ,A validation message should appear:"Please select a file"/"File name is required".
+5. The file should uploaded successfully even without a desription.
+6. The selected file should be clearly visible in the  window, showing the filename and size.
+7. The system should allow users to view  the file after uploading.
+8. If an unsupported file type is uploaded, a clear error message should be displayed, guiding users on supported formats.
