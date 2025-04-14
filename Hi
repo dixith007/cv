@@ -1,70 +1,41 @@
 Summary
-Overall 5+ years experienced Business Intelligence and data visualization developer with 2+ years of experience having technical in-depth knowledge and expertise in designing and developing and optimizing database using SQL and ORACLE 
-Skilled in writing complex queries, stored procedures, performance tuning and supporting data driven applications.
-Designed and developed database objects like tables, views, indexes, stored procedures, and triggers.
-Wrote optimized SQl and pl/sql queries for reporting and application .
-Documented data dictionaries, tables structures, and stored procedures.
-Assisted in migrating data from Excel and csv files into SQl server using bulk insert and SSIS
-Developed interactive dashboards in Tableau for data visualization to highlight the outcomes and benefits of the automation.
-Created dashboards using Tableau and prepared user stories to create compelling dashboards to deliver actionable insights 
-      Experienced in analyzing business requirements and creating functional requirements specifications to build and deploy solutions 
-Gathering, reviewing and analyzing business and industry data, including KPIs, financial reports and other key metrics using data analytics tools
-Identifying and communicating with key stakeholders for smooth project delivery and discover new business solutions
-Skilled in using Merge and Append Queries to create meaningful and actionable dashboards and set up Row level security in Power BI
-Coordinate with business users to customize analytical solutions to meet business needs.
-Experience in building various views, Sorting, Grouping, Hierarchy, Aggregate calculations and String functions using Tableau
-Developed interactive dashboards in Tableau for data visualization to highlight the outcomes and benefits of the automation.
-Created dashboards using Tableau and prepared user stories to create compelling dashboards to deliver actionable insights 
-Created and managed SharePoint out-of-box features Site Columns, Lists, permissions, List Views, Links, and Web Parts
+Professional Summary
+Business Intelligence Developer with 1.5+ years of experience in data analysis, SQL development, and data visualization.
+Proven expertise in working with cross-functional teams to ensure data accuracy, optimize queries, and deliver actionable insights via tools like Power BI. 
+Skilled in database querying, preparing test scenarios for BI systems, and enhancing reporting accuracy across enterprise-level dashboards.
+Worked closely with business users to gather requirements and turn data into useful reports and insights.
 
-Key Skills
+
+
+Technical 
 Tech Stack:  SQL, DAX
-Database : SQL server, Oracle, Mysql
-Tools : SQL Developer
+Database : SQL server, MySql
+BI Tools : Power BI, Excel
 Project Management: Jira
-Other tools: SharePoint, Alteryx, Power BI , Tableau
+Other tools: SharePoint
+
 
 Work Experience
 Employee Payroll System
-Tools:  SQL, Tableau, Oracle
-Role: SQL Developer
-Responsibility:
-Implemented stored procedures for salary computation based on leaves, bonuses, and deduction.
-wrote triggers for logging changes to salary structure
-Used PL/SQL for business rule implementation.
-Worked extensively with Advance Analysis Actions, Calculations, Parameters, Background images, Maps, Trend Lines, Statistics, Log Axes, Groups, hierarchies, sets to create detail level summary reports and dashboards using KPI's. 
-Excellent knowledge of DAX Functions in Power BI 
-Used Merge and Append Queries to create meaningful and actionable dashboards and set up Row level security in Power BI
-Scheduled refresh on datasets using Gateway operations
+. EXL Services – BI QA Analyst / BI Developer Duration: Sept 2023 – Present
+      Project: ART - BI Dashboard, Quality Assurance
+      Tools: SQL Server, Power BI.
+Responsibilities:
+Worked closely with the BI team to test dashboards built on Power BI by validating backend SQL queries and data logic.
+Wrote and optimized SQL queries to validate metrics like KPIs, aggregations, and trendlines displayed on dashboards.
+Helped build SQL queries to fetch restaurant order data, apply business rules, and visualize trends.
+Documented KPIs and helped analysts prepare user stories for dashboard delivery.
+Assisted the team in writing DAX expressions for custom calculated columns and measures.
 
-Knowledge base management project
-Tools: Tableau, SharePoint Designer, CSS, HTML
-Roles: BI Developer
-Responsibility: 
-Designed & developed interactive reports & dashboards in tableau for data visualization.
-Collaborated with data analysts, business analysts and stakeholders to gather requirements and refine report designs.
-Worked as Individual Contributor to complete the assigned tasks based on client requirements.
-Created and managed SharePoint out-of-box features Site Columns, Lists, permissions, List Views, Links, and Web Parts.
-Created custom forms for users to fill in the information using HTML
 
-3.   Procter & Gamble project 
-Tools: SQL Server, Tableau
-Role: BI Developer
-Responsibility: 
-Analyzing the requirements and preparing reports as per the client requirements.
-Developing, Designing and supporting interactive Tableau Dashboards.
-Continuously improved existing reports with change in stakeholders or reporting needs.
-Transforming and add columns in Query Editor Window.
-Coordinate with business users to customize analytical solutions to meet business needs.
-Experience in building various views, Sorting, Grouping, Hierarchy, Aggregate calculations and String functions using Tableau
-Developed interactive dashboards in Tableau for data visualization to highlight the outcomes and benefits of the automation.
-Created dashboards using Tableau and prepared user stories to create compelling dashboards to deliver actionable insights .
-4.    Healthcare project
-Tools: Tableau, SharePoint 
-Roles: BI Developer
-Responsibility: 
-Analyzed business requirements and created functional requirements specifications
-Designed & developed interactive reports & dashboards in tableau for data visualization.
-Collaborated with data analysts, business analysts and stakeholders to gather requirements and refine report designs.
-Created and managed SharePoint out-of-box features Site Columns, Lists, permissions, List Views, Links, and Web Parts
+2. Design WebTech – BI Intern (Menu Analytics Module) Duration: Jan 2023 – Aug 2023 
+     Tools: SQL, Tableau, MySQL 
+Responsibilities:
+Designed menu analytics dashboard using Tableau for internal reporting.
+Worked on creating dynamic filters, dropdowns, and aggregate measures (total orders, ratings, revenue).
+Coordinated with developers to test triggers and stored procedures for report generation.
+Documented KPIs and helped analysts prepare user stories for dashboard delivery.
+
+
+
 
