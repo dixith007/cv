@@ -53,3 +53,16 @@ DECODE() in Oracle — SQL Server uses CASE instead
 DUAL table in Oracle for dummy SELECTs
 TRUNC() for dates/numbers in Oracle
 SYSDATE in Oracle vs GETDATE() in SQL Server
+
+SQL Functions – Themed Categories
+
+💡 Category	🔧 Examples	📘 What They Do
+1. String Functions	UPPER(), LOWER(), SUBSTR(), LENGTH(), TRIM(), CONCAT()	Used to format or manipulate text data
+2. Date/Time Functions	SYSDATE, GETDATE(), TRUNC(), DATEADD(), DATEDIFF()	Work with date/time values (compare, add, remove time, etc.)
+3. Numeric Functions	ROUND(), TRUNC(), CEIL(), FLOOR(), ABS(), MOD()	Perform mathematical calculations
+4. Conversion Functions	TO_CHAR(), TO_DATE(), CAST(), CONVERT()	Convert data from one type to another
+5. Aggregate Functions	SUM(), AVG(), COUNT(), MIN(), MAX()	Calculate values across rows (used with GROUP BY)
+6. Null Handling	NVL(), ISNULL(), COALESCE(), NULLIF()	Handle NULL values in expressions
+7. Conditional Functions	CASE, DECODE() (Oracle), IF() (MySQL)	Apply logic/conditions within queries
+8. Analytical / Window Functions	RANK(), ROW_NUMBER(), DENSE_RANK(), LAG(), LEAD()	Perform calculations across rows without collapsing them
+
