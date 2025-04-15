@@ -1,41 +1,37 @@
-Summary
-Professional Summary
-Business Intelligence Developer with 1.5+ years of experience in data analysis, SQL development, and data visualization.
-Proven expertise in working with cross-functional teams to ensure data accuracy, optimize queries, and deliver actionable insights via tools like Power BI. 
-Skilled in database querying, preparing test scenarios for BI systems, and enhancing reporting accuracy across enterprise-level dashboards.
-Worked closely with business users to gather requirements and turn data into useful reports and insights.
+1. What level of comfortability with SQL Server and Oracle SQL?
+"I'm very comfortable with SQL Server — I've written and optimized many queries as part of BI validation, including complex joins, subqueries, CTEs, 
+and window functions. While my hands-on experience with Oracle is limited, I’ve been exploring its key differences like SYSDATE, TRUNC(), NVL(), 
+and string functions. I'm a fast learner and confident in picking up any SQL flavor quickly."
 
+2. What do you do to modify the date fields?
+"To modify or manipulate date fields, I typically use functions like:
+DATEADD() or DATEDIFF() in SQL Server
+TRUNC(), ADD_MONTHS(), or EXTRACT() in Oracle
 
+In SQL Server: I use CONVERT(), CAST(), DATEADD(), DATEDIFF(), or FORMAT() depending on the requirement.
 
-Technical 
-Tech Stack:  SQL, DAX
-Database : SQL server, MySql
-BI Tools : Power BI, Excel
-Project Management: Jira
-Other tools: SharePoint
+In Oracle SQL: I use TO_DATE, TO_CHAR, TRUNC, and arithmetic operations on dates.
 
+For example, to get just the month and year, I might use FORMAT(date_column, 'yyyy-MM') in SQL Server or TO_CHAR(date_column, 'YYYY-MM') in Oracle.
+For formatting, I use CONVERT() in SQL Server and TO_CHAR() in Oracle. These help in removing time, calculating date ranges, or formatting for reports."
 
-Work Experience
-Employee Payroll System
-. EXL Services – BI QA Analyst / BI Developer Duration: Sept 2023 – Present
-      Project: ART - BI Dashboard, Quality Assurance
-      Tools: SQL Server, Power BI.
-Responsibilities:
-Worked closely with the BI team to test dashboards built on Power BI by validating backend SQL queries and data logic.
-Wrote and optimized SQL queries to validate metrics like KPIs, aggregations, and trendlines displayed on dashboards.
-Helped build SQL queries to fetch restaurant order data, apply business rules, and visualize trends.
-Documented KPIs and helped analysts prepare user stories for dashboard delivery.
-Assisted the team in writing DAX expressions for custom calculated columns and measures.
+3. REGEXP_REPLACE(patient_name, '>|<','') — What is the equivalent in MS SQL Server?
+"Since SQL Server doesn't support REGEXP_REPLACE() natively, we can achieve this using nested REPLACE() functions for simple cases:
+SELECT REPLACE(REPLACE(patient_name, '<', ''), '>', '') AS cleaned_name
+FROM patients;
+For more advanced patterns, we’d consider using CLR integration or writing a custom function."
 
+4. TRUNC(service_date) — Equivalent in SQL Server? Can it be done without CONVERT()?
+TRUNC(service_date) in Oracle removes the time portion and returns only the date.
+In SQL Server, the most direct way is:
+In SQL Server, the closest equivalent is:
+SELECT CAST(service_date AS DATE )     or
+SELECT CONVERT(DATE, service_date)
 
-2. Design WebTech – BI Intern (Menu Analytics Module) Duration: Jan 2023 – Aug 2023 
-     Tools: SQL, Tableau, MySQL 
-Responsibilities:
-Designed menu analytics dashboard using Tableau for internal reporting.
-Worked on creating dynamic filters, dropdowns, and aggregate measures (total orders, ratings, revenue).
-Coordinated with developers to test triggers and stored procedures for report generation.
-Documented KPIs and helped analysts prepare user stories for dashboard delivery.
+5. Do you know functions in Oracle SQL that are not in SQL Server?
 
-
-
-
+NVL() in Oracle vs ISNULL() in SQL Server
+DECODE() in Oracle — SQL Server uses CASE instead
+DUAL table in Oracle for dummy SELECTs
+TRUNC() for dates/numbers in Oracle
+SYSDATE in Oracle vs GETDATE() in SQL Server
