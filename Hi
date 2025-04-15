@@ -3,6 +3,21 @@
 and window functions. While my hands-on experience with Oracle is limited, I’ve been exploring its key differences like SYSDATE, TRUNC(), NVL(), 
 and string functions. I'm a fast learner and confident in picking up any SQL flavor quickly."
 
+“I’ve mainly worked with MySQL and MS SQL, but I’ve also explored Oracle SQL. One key difference I’ve noticed is in the syntax and functions.
+For example, Oracle uses SYSDATE to get the current date, while SQL Server uses GETDATE(). Also, Oracle joins strings using ||, whereas SQL Server uses +.
+Another example — in Oracle we use NVL() to handle null values, while in SQL Server it’s ISNULL().
+Even the way we limit rows is different: Oracle uses ROWNUM or FETCH FIRST, while SQL Server uses TOP or OFFSET-FETCH.
+These are small differences, but the underlying SQL logic is the same, so it’s easy for me to switch and adapt.”
+
+What is || in SQL?
+It’s used to join two or more strings together.
+Common in Oracle SQL and PostgreSQL.  Example:SELECT 'Hello' || ' ' || 'World' AS greeting  FROM dual;
+
+In MS SQL Server and MySQL, we use + or CONCAT() instead.   SELECT 'Hello' + ' ' + 'World' AS greeting;
+                                                            SELECT CONCAT('Hello', ' ', 'World') AS greeting;
+
+*)regex replace in orcale vs ms sql
+
 2. What do you do to modify the date fields?
 "To modify or manipulate date fields, I typically use functions like:
 DATEADD() or DATEDIFF() in SQL Server
@@ -22,9 +37,12 @@ FROM patients;
 For more advanced patterns, we’d consider using CLR integration or writing a custom function."
 
 4. TRUNC(service_date) — Equivalent in SQL Server? Can it be done without CONVERT()?
+“In Oracle SQL, the TRUNC() function is commonly used to remove the time part from a date, keeping only the date portion.
+It can also be used to truncate numbers to a specific decimal place.
+
 TRUNC(service_date) in Oracle removes the time portion and returns only the date.
-In SQL Server, the most direct way is:
-In SQL Server, the closest equivalent is:
+
+In SQL Server, the closest equivalent is: We use CAST(GETDATE() AS DATE) or CONVERT(DATE, GETDATE()) to achieve the same effect.
 SELECT CAST(service_date AS DATE )     or
 SELECT CONVERT(DATE, service_date)
 
