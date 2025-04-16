@@ -8,6 +8,8 @@ Alongside SQL,During my internship, I’ve also worked with Power BI to help vis
 
 Outside of work, I have a creative side—I enjoy video editing and photo editing, which helps me stay detail-oriented and visually focused even in dashboard design
 and I’m excited about the opportunity to contribute my skills to your team."
+
+
 ///////////////////////////////////////////////////
 
 In this project, my main responsibility was to validate and ensure data accuracy in the backend by writing complex SQL queries to test payroll data, KPIs, and trend metrics.
