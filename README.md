@@ -3,9 +3,9 @@ Hi, I'm [Your Name], and I'm based in Bangalore. I have around 1.5 years of expe
 In my current role at EXL Services, I primarily work on writing and optimizing SQL queries to support backend data validation,
 
 I'm also comfortable using functions, subqueries, joins, and date transformations in SQL for both analysis and testing purposes.
-During my internship, I was involved in data visualization and testing,
+I was involved in data visualization and testing,
 
-Alongside SQL, I’ve also worked with Power BI to help visualize and test data logic on dashboards, writing DAX for custom KPIs. 
+Alongside SQL,During my internship, I’ve also worked with Power BI to help visualize and test data logic on dashboards, writing DAX for custom KPIs. 
 
 Outside of work, I have a creative side—I enjoy video editing and photo editing, which helps me stay detail-oriented and visually focused even in dashboard design
 and I’m excited about the opportunity to contribute my skills to your team."
