@@ -8,22 +8,13 @@ Alongside SQL,During my internship, I’ve also worked with Power BI to help vis
 
 Outside of work, I have a creative side—I enjoy video editing and photo editing, which helps me stay detail-oriented and visually focused even in dashboard design
 and I’m excited about the opportunity to contribute my skills to your team."
+///////////////////////////////////////////////////
 
-What level of comfortability with SQL server and Oracle SQL
-2- What do you do to modify the date fields
-3- Regex_repalce(patient_name, '>|<','')  -- what would be the equivalent in Microsoft SQL server
-4- Trunc(service_date)  what is equivalent Sql server function - can we do it by any other mean apart of convert function
-5- Do you know functions in Oracle Sql, but not in Sql server
-6- How to use equivalent of Dual table in Oracle Sql
-7- How to calculate age
-8- Which tools you use to check for solutions while debugging
- 
- 
-Age-calculate number of days from today and divide by 365.25
+In this project, my main responsibility was to validate and ensure data accuracy in the backend by writing complex SQL queries to test payroll data, KPIs, and trend metrics.
+I worked closely with the data team to extract relevant fields, apply business rules using SQL, and verify the outputs across large datasets.
 
-10-sysdate  in oracle is equivalent is to getdate()
-11-Datediff
-12-project written in the profile
- 
-Hi, I'm [Your Name], and I'm based in Bangalore. I have around 1.5 years of experience in data analytics, currently working as a BI Developer at EXL Services. My role involves validating Power BI dashboards, writing and optimizing SQL queries, and creating DAX measures for custom KPIs.
-Earlier, during my internship, I built a Menu Analytics dashboard using power bi and worked on report testing and automation.
+I also helped document business logic and created calculated measures when needed. Though the dashboards were built in Power BI, my focus was on backend validation using SQL Server — including joins, aggregations, date transformations, and CASE logic."
+//////////
+As part of my internship, I worked on a Menu Analytics module where I extracted restaurant order data using MySQL, applied logic to calculate key metrics like total orders, revenue, and average ratings.
+
+I wrote SQL queries to prepare the data and later helped the team build visualizations in Tableau. My focus was more on the backend logic — writing test cases, validating stored procedures, and supporting report testing."
