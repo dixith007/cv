@@ -1,5 +1,5 @@
  
-Hi, I'm [Your Name], and I'm based in Bangalore. I have around 1.5 years of experience in data analytics, currently working as a BI Developer at EXL Services., with a  focus on SQL development and data validation.
+Hi, I'm [Your Name], and I'm based in Bangalore. I have around 1.5 years of experience in sql dev, with a  focus on SQL development and data validation.
 In my current role at EXL Services, I primarily work on writing and optimizing SQL queries to support backend data validation,
 
 I'm also comfortable using functions, subqueries, joins, and date transformations in SQL for both analysis and testing purposes.
@@ -11,10 +11,29 @@ and I’m excited about the opportunity to contribute my skills to your team."
 ///////////////////////////////////////////////////
 
 In this project, my main responsibility was to validate and ensure data accuracy in the backend by writing complex SQL queries to test payroll data, KPIs, and trend metrics.
-I worked closely with the data team to extract relevant fields, apply business rules using SQL, and verify the outputs across large datasets.
+I usedd worked closely with the data team to extract relevant fields, apply business rules using SQL, and verify the outputs across large datasets.
 
-I also helped document business logic and created calculated measures when needed. Though the dashboards were built in Power BI, my focus was on backend validation using SQL Server — including joins, aggregations, date transformations, and CASE logic."
+my focus was on backend validation using SQL Server — including joins, aggregations, date transformations, and CASE logic."
+
 //////////
 As part of my internship, I worked on a Menu Analytics module where I extracted restaurant order data using MySQL, applied logic to calculate key metrics like total orders, revenue, and average ratings.
 
-I wrote SQL queries to prepare the data and later helped the team build visualizations in Tableau. My focus was more on the backend logic — writing test cases, validating stored procedures, and supporting report testing."
+I wrote SQL queries to prepare the data and later helped the team build visualizations in powerbi. My focus was more on the backend logic — writing test cases, validating stored procedures, and supporting report testing."
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
