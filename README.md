@@ -1,14 +1,14 @@
 Hi [Recipient's Name],
 
-I hope you're doing well!
+Hope you're doing well!
 
-I wanted to share that I'm currently exploring new opportunities and would be excited to contribute to a dynamic team like yours. I’ve been working at EXL for the past 1.8 years as a Manual and Automation Tester, gaining hands-on experience in Selenium with Java, test case design, defect tracking, and more.
+I’m currently on the bench and actively looking for new opportunities within EXL. I’ve been working here for the past 1.8 years as a Manual and Automation Tester, with hands-on experience in Selenium WebDriver with Java, test case creation, and defect tracking using Jira.
 
-Alongside my QA experience, I’ve also developed strong skills in SQL, Power BI, and basic Python—allowing me to support data analysis and visualization tasks effectively.
+In addition to my QA background, I also have good knowledge of SQL, Power BI, and basic Python, which helps me support data analysis and validation tasks effectively.
 
-I’m enthusiastic about bringing a blend of QA expertise and data knowledge to support the team’s goals and deliver high-quality outcomes. I’ve attached my resume for your reference, and I’d love to connect if there’s a potential fit or if you know of any opportunities I should explore.
+I’m really eager to join a team where I can contribute meaningfully and be resourceful. Please find my resume attached—I'd be grateful if you could let me know of any openings or keep me in mind for any relevant opportunities.
 
-Thanks for your time and consideration!
+Thanks so much!
 
 Best regards,
-[Your Name]
+Deekshith KP
