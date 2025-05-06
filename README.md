@@ -1,19 +1,14 @@
-EXL – CVS HealthCare
-Project: CHPS RPTS Transformation2-ART (Apr 2024 – Nov 2024)
+Hi [Recipient's Name],
 
-Automated test cases using Selenium WebDriver with Java to improve execution efficiency.
+I hope you're doing well!
 
-Designed and executed functional and UI test cases; conducted regression and integration testing.
+I wanted to share that I'm currently exploring new opportunities and would be excited to contribute to a dynamic team like yours. I’ve been working at EXL for the past 1.8 years as a Manual and Automation Tester, gaining hands-on experience in Selenium with Java, test case design, defect tracking, and more.
 
-Modified pre-built frameworks and ensured seamless Excel-based manual and automated test execution.
+Alongside my QA experience, I’ve also developed strong skills in SQL, Power BI, and basic Python—allowing me to support data analysis and visualization tasks effectively.
 
-Logged and tracked defects in Jira, collaborating with developers for quick resolution.
+I’m enthusiastic about bringing a blend of QA expertise and data knowledge to support the team’s goals and deliver high-quality outcomes. I’ve attached my resume for your reference, and I’d love to connect if there’s a potential fit or if you know of any opportunities I should explore.
 
-Optimized test coverage and improved overall testing processes through cross-functional collaboration.
+Thanks for your time and consideration!
 
-EXL – GenServe.ai
-Project: GenServe AI Platform (Feb 2025 – Mar 2025)
-
-Performed manual testing to validate new AI features and workflows.
-
-Documented test cases, reported issues, and collaborated with the development team for resolution.
+Best regards,
+[Your Name]
