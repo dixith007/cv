@@ -1,12 +1,10 @@
-Generative AI Chatbot Validation
-Role: Business Analyst / QA
-Duration: Feb 2025 – Mar 2025
+Worked on manual testing of AI features by preparing and executing detailed test cases based on requirements.
 
-Collaborated with the AI team to test and validate chatbot flows for accuracy, language relevance, and user context handling.
+Collaborated closely with developers and data scientists to understand Gen AI workflows and ensure feature reliability.
 
-Analyzed user interactions and tagged feedback to improve response quality using data patterns.
+Performed UI and API validations, ensuring the quality of generated responses.
 
-Contributed to defining test data, verifying API responses, and ensuring the AI assistant's behavior aligned with expected user journeys.
+Gained hands-on experience in Python for test data setup and basic script validation
 
 
 
