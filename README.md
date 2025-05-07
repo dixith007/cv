@@ -1,13 +1,10 @@
-JCS to JEDI Migration – Healthcare Project
-Role: QA Analyst
-Duration: Sep 2023 – Mar 2024
+Designed and implemented the Cuisine and Menu Management Module with CRUD operations using HTML, PHP, Laravel, and Bootstrap.
 
-Worked on the JCS-JEDI migration, validating complex healthcare business rules and data flows.
+Created responsive UI components, search functionality, and integrated client-server validations.
 
-Designed and executed manual test cases to verify UI behavior, data integrity, and functional transitions.
+Built MySQL database schema for efficient data storage and retrieval.
 
-Performed regression testing during rule migration to ensure system stability.
+Conducted manual testing of developed modules to ensure functional and UI consistency.
 
-Collaborated with developers and business teams to clarify requirements and resolve issues.
+Developed dashboard cards to provide insights on menu categories and items.
 
-Used JIRA for defect tracking and Confluence for documentation.
