@@ -1,23 +1,13 @@
-erformed automation testing using Selenium WebDriver with Java to enhance test execution efficiency.
-
-Created, updated, and optimized test scripts to ensure high test coverage and timely regression cycles.
-
-Used SQL for validating data accuracy and consistency across systems.
-
-Managed test data and reported defects using Jira, ensuring smooth communication with cross-functional teams.
-
-Utilized Excel for test planning, tracking, and reporting execution status to stakeholders.
-
-
-
-CVS Health – BI Dashboard Testing
+JCS to JEDI Migration – Healthcare Project
 Role: QA Analyst
-Duration: Apr 2024 – Nov 2024
+Duration: Sep 2023 – Mar 2024
 
-Performed backend data validation using SQL queries to ensure data accuracy across multiple BI dashboards.
+Worked on the JCS-JEDI migration, validating complex healthcare business rules and data flows.
 
-Conducted functional, regression, and integration testing to verify dashboard features and data flows.
+Designed and executed manual test cases to verify UI behavior, data integrity, and functional transitions.
 
-Validated reports and visual elements by comparing against source data.
+Performed regression testing during rule migration to ensure system stability.
 
-Reported defects in JIRA and collaborated with the development team to ensure timely resolution.
+Collaborated with developers and business teams to clarify requirements and resolve issues.
+
+Used JIRA for defect tracking and Confluence for documentation.
