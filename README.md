@@ -37,3 +37,20 @@ Performed automation and manual testing, primarily validating backend data accur
 Participated in requirement analysis and contributed to reporting improvements using Excel and basic SQL.
 
 Collaborated with cross-functional teams to support quality checks on dashboard data and reporting logic.
+
+
+
+
+Business Analyst and Data Enthusiast with 1.8 years of experience in Quality Analysis, currently transitioning into analytics and cloud roles.
+
+Hands-on experience working with SQL, Power BI, and Excel for data validation, reporting, and dashboard testing.
+
+Recently contributed to a Generative AI project focused on data verification, chatbot flow testing, and feedback tagging.
+
+Previously worked on CVS Healthcare dashboard validations and backend testing using Selenium WebDriver and SQL.
+
+Actively upskilling in Google Cloud Platform (GCP) and Python for cloud-based analytics and automation.
+
+Experienced in understanding business requirements, documenting functional flows, and coordinating with cross-functional teams for successful project delivery.
+
+Passionate about turning raw data into actionable insights to support business decision-making.
