@@ -1,10 +1,12 @@
-Worked on manual testing of AI features by preparing and executing detailed test cases based on requirements.
+erformed automation testing using Selenium WebDriver with Java to enhance test execution efficiency.
 
-Collaborated closely with developers and data scientists to understand Gen AI workflows and ensure feature reliability.
+Created, updated, and optimized test scripts to ensure high test coverage and timely regression cycles.
 
-Performed UI and API validations, ensuring the quality of generated responses.
+Used SQL for validating data accuracy and consistency across systems.
 
-Gained hands-on experience in Python for test data setup and basic script validation
+Managed test data and reported defects using Jira, ensuring smooth communication with cross-functional teams.
+
+Utilized Excel for test planning, tracking, and reporting execution status to stakeholders.
 
 
 
