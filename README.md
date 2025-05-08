@@ -1,3 +1,13 @@
-I'm currently on the bench and exploring opportunities within EXL. I spoke with Anil Bajpai regarding my situation, and he recommended I reach out to you regarding any support roles you might be hiring for or need help with.
+Subject: Resume Submission for Career Opportunities
 
-I'd be happy to contribute and assist the team in any way possible. Please let me know if there's any opportunity I can be a part of.
+Dear [Team/Recruitment Team/HR Team],
+
+I hope this message finds you well.
+
+I am attaching my resume for your consideration. Please let me know if there are any suitable opportunities available that match my background and skills. I would be grateful for the chance to contribute to your team.
+
+Thank you for your time and consideration.
+
+Best regards,
+[Your Full Name]
+[Your Contact Information]
