@@ -1,68 +1,11 @@
-1. What level of comfortability with SQL Server and Oracle SQL?
-"I'm very comfortable with SQL Server — I've written and optimized many queries as part of BI validation, including complex joins, subqueries, CTEs, 
-and window functions. While my hands-on experience with Oracle is limited, I’ve been exploring its key differences like SYSDATE, TRUNC(), NVL(), 
-and string functions. I'm a fast learner and confident in picking up any SQL flavor quickly."
+Hi, I’m Deekshith KP. I have 1.8 years of experience as a Quality Analyst with a strong focus on data validation, dashboard testing, and functional analysis. 
+Over the past few months, I’ve been transitioning into a Business Analyst and Data role, actively working with tools like SQL, Power BI, and Excel to support data-driven decision-making.
 
-“I’ve mainly worked with MySQL and MS SQL, but I’ve also explored Oracle SQL. One key difference I’ve noticed is in the syntax and functions.
-For example, Oracle uses SYSDATE to get the current date, while SQL Server uses GETDATE(). Also, Oracle joins strings using ||, whereas SQL Server uses +.
-Another example — in Oracle we use NVL() to handle null values, while in SQL Server it’s ISNULL().
-Even the way we limit rows is different: Oracle uses ROWNUM or FETCH FIRST, while SQL Server uses TOP or OFFSET-FETCH.
-These are small differences, but the underlying SQL logic is the same, so it’s easy for me to switch and adapt.”
+Recently, I worked on a Generative AI project where I was involved in chatbot flow testing, data verification, and feedback tagging. 
+Prior to that, I contributed to CVS Healthcare’s reporting transformation by validating dashboards, automating backend tests using Selenium with Java, and ensuring data accuracy with SQL.
 
-What is || in SQL?
-It’s used to join two or more strings together.
-Common in Oracle SQL and PostgreSQL.  Example:SELECT 'Hello' || ' ' || 'World' AS greeting  FROM dual;
+I also worked on a healthcare migration project where I validated complex business rules and collaborated closely with cross-functional teams.
+Alongside my professional experience, I’m currently upskilling in Python and Google Cloud Platform to deepen my analytics and cloud capabilities.
 
-In MS SQL Server and MySQL, we use + or CONCAT() instead.   SELECT 'Hello' + ' ' + 'World' AS greeting;
-                                                            SELECT CONCAT('Hello', ' ', 'World') AS greeting;
-
-*)regex replace in orcale vs ms sql
-
-2. What do you do to modify the date fields?
-"To modify or manipulate date fields, I typically use functions like:
-DATEADD() or DATEDIFF() in SQL Server
-TRUNC(), ADD_MONTHS(), or EXTRACT() in Oracle
-
-In SQL Server: I use CONVERT(), CAST(), DATEADD(), DATEDIFF(), or FORMAT() depending on the requirement.
-
-In Oracle SQL: I use TO_DATE, TO_CHAR, TRUNC, and arithmetic operations on dates.
-
-For example, to get just the month and year, I might use FORMAT(date_column, 'yyyy-MM') in SQL Server or TO_CHAR(date_column, 'YYYY-MM') in Oracle.
-For formatting, I use CONVERT() in SQL Server and TO_CHAR() in Oracle. These help in removing time, calculating date ranges, or formatting for reports."
-
-3. REGEXP_REPLACE(patient_name, '>|<','') — What is the equivalent in MS SQL Server?
-"Since SQL Server doesn't support REGEXP_REPLACE() natively, we can achieve this using nested REPLACE() functions for simple cases:
-SELECT REPLACE(REPLACE(patient_name, '<', ''), '>', '') AS cleaned_name
-FROM patients;
-For more advanced patterns, we’d consider using CLR integration or writing a custom function."
-
-4. TRUNC(service_date) — Equivalent in SQL Server? Can it be done without CONVERT()?
-“In Oracle SQL, the TRUNC() function is commonly used to remove the time part from a date, keeping only the date portion.
-It can also be used to truncate numbers to a specific decimal place.
-
-TRUNC(service_date) in Oracle removes the time portion and returns only the date.
-
-In SQL Server, the closest equivalent is: We use CAST(GETDATE() AS DATE) or CONVERT(DATE, GETDATE()) to achieve the same effect.
-SELECT CAST(service_date AS DATE )     or
-SELECT CONVERT(DATE, service_date)
-
-5. Do you know functions in Oracle SQL that are not in SQL Server?
-
-NVL() in Oracle vs ISNULL() in SQL Server
-DECODE() in Oracle — SQL Server uses CASE instead
-DUAL table in Oracle for dummy SELECTs
-TRUNC() for dates/numbers in Oracle
-SYSDATE in Oracle vs GETDATE() in SQL Server
-
-SQL Functions – Themed Categories
-
-💡 Category	🔧 Examples	📘 What They Do
-1. String Functions	UPPER(), LOWER(), SUBSTR(), LENGTH(), TRIM(), CONCAT()	Used to format or manipulate text data
-2. Date/Time Functions	SYSDATE, GETDATE(), TRUNC(), DATEADD(), DATEDIFF()	Work with date/time values (compare, add, remove time, etc.)
-3. Numeric Functions	ROUND(), TRUNC(), CEIL(), FLOOR(), ABS(), MOD()	Perform mathematical calculations
-4. Conversion Functions	TO_CHAR(), TO_DATE(), CAST(), CONVERT()	Convert data from one type to another
-5. Aggregate Functions	SUM(), AVG(), COUNT(), MIN(), MAX()	Calculate values across rows (used with GROUP BY)
-6. Null Handling	NVL(), ISNULL(), COALESCE(), NULLIF()	Handle NULL values in expressions
-7. Conditional Functions	CASE, DECODE() (Oracle), IF() (MySQL)	Apply logic/conditions within queries
-8. Analytical / Window Functions	RANK(), ROW_NUMBER(), DENSE_RANK(), LAG(), LEAD()	Perform calculations across rows without collapsing them
-
+I’m passionate about transforming raw data into actionable insights, 
+and I’m excited about roles that combine data analysis, business understanding, and technology to solve real-world problems.”
