@@ -1,10 +1,7 @@
-In the CVS (Retail) project, I worked more like a Business Analyst. I was responsible for validating the data shown in Power BI dashboards, checking the logic behind KPIs and visual filters.
-I wrote SQL queries to validate data at the source and ensure it matched the visuals and metrics on the dashboards.
-To reduce repetitive testing, I also updated and ran Selenium automation scripts and integrated Excel-based data for automated validation.
-This project strengthened my skills in BI validation, dashboard testing, and data accuracy.
-
-
-In the CVS project, apart from validating existing dashboards, I also contributed to creating a simple Power BI dashboard. 
-It included key indicators such as Total Sales, Number of Orders, and Average Rating. I used card visuals for KPIs, bar charts to show category-wise performance, and slicers to filter by region and time period.
-This helped stakeholders quickly track overall performance and drill down into specific metrics.
-I handled data connection, DAX measures, and ensured that visuals accurately reflected backend SQL data
+Focused on self-development through on-the jobs coaching, completing relevant
+training and making steady progress on my individual development plan(IDP).
+ 
+Actively contributing to knowledge sharing and supporting business development through documentation, collaboration and identifying new opportunity.
+ 
+Adhering to the company's code of conduct while maintaining respectful and professional interactions with team members.
+ 
