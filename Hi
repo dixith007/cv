@@ -1,17 +1,7 @@
-Self Assessment on Goals					
-"Instructions:
-1. Maximum 20 goals can be added using this template
-2. All fields marked (*) are mandatory
-3. Any individual goal should not have weightage greater than 100
-4.  Start Date & End Date should be entered in ‘DD-MON-YYYY’ format only, default date would be uploaded if left blank
-5. Please do not change the name of the document while saving it"					
-*Goal Title	*Weightage(%)	*Category	Start Date	 End Date	 *Description
-Strategic Initiatives	10	Strategic	DOJ or 01-Jan-2022	31-Dec-2022	"1.  Business development & New Account Revenue
-2. Training and Recruitment
-3. Product development/ IP development
-"
-Client Satisfaction	25	Customer  (External & Internal )	DOJ or 01-Jan-2022	31-Dec-2022	Account Level C-Sat Rating of 8+ (on a scale of 10.0)
-Compliance	5	Financial / Revenue / Cost Management	DOJ or 01-Jan-2022	31-Dec-2022	Compliance relating to company wide code of conduct, procedures and policies, client specific requirements, timelines and accuracy of submissions on I Expense etc.
-Business Development	5	Financial / Revenue / Cost Management	DOJ or 01-Jan-2022	31-Dec-2022	Support Consulting BD efforts via collateral creation, proposal writing, client sales discussions etc
-Project Performance	55	Financial / Revenue / Cost Management	DOJ or 01-Jan-2022	31-Dec-2022	"As per the assessment by the PMs/EMs/VPs on the Project (includes quality of deliverables, accuracy, business impact for the client, innovative solution,  team management, client management etc)
-"
+| **Goal Title**            | **Weightage (%)** | **Category**                          | **Start Date** | **End Date** | **Description**                                                                                                                                                                                                                                                                                                                                   |
+| ------------------------- | ----------------- | ------------------------------------- | -------------- | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Strategic Initiatives** | 10                | Strategic                             | 01-Jan-2025    | 31-Dec-2025  | I will contribute to onboarding and training new joiners in the SSD team by conducting knowledge transfer (KT) sessions and explaining commonly used SQL queries and data structures. I will also suggest process improvements by creating reusable SQL scripts to handle frequently asked marketing queries more efficiently.                    |
+| **Client Satisfaction**   | 25                | Customer (External & Internal)        | 01-Jan-2025    | 31-Dec-2025  | I will ensure timely and accurate responses to marketing-related data requests from Amazon stakeholders. My focus will be on understanding their needs, maintaining clear communication, and delivering insights that help in campaign decision-making using SQL. I aim to maintain a high satisfaction score through quality and responsiveness. |
+| **Compliance**            | 5                 | Financial / Revenue / Cost Management | 01-Jan-2025    | 31-Dec-2025  | I will strictly follow EXL and Amazon data policies while handling and sharing data. I will ensure timely submission of timesheets, adhere to internal SOPs, and maintain documentation of the SQL work done for marketing analysis.                                                                                                              |
+| **Business Development**  | 5                 | Financial / Revenue / Cost Management | 01-Jan-2025    | 31-Dec-2025  | I will support internal teams by preparing query logic and data summaries that may be used in presentations or internal dashboards. I will also contribute to idea sharing for how SQL automation and dashboards can support business growth in marketing analytics.                                                                              |
+| **Project Performance**   | 55                | Financial / Revenue / Cost Management | 01-Jan-2025    | 31-Dec-2025  | I will work closely with the SSD team on handling SQL-based marketing queries, data extraction, and reporting. My focus will be on delivering accurate and meaningful outputs, reducing turnaround time, improving efficiency through reusable queries, and contributing to overall data quality and stakeholder support.                         |
